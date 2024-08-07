@@ -22,9 +22,9 @@ html { scroll-behavior: smooth; }
 /* For regular laptops and smaller screens */
 body {
     max-width: 100%; /* Allow it to expand to the full width of the screen */
-    background-color: #F5F5F5; 
-    color:  #141201; 
-    font-family: "Nunito", sans-serif;
+    background-color: #FFFDFF; 
+    color:  #033357; 
+    font-family: "Source Sans 3", sans-serif;
 }
 
 /* For larger screens like flatscreen TVs */
@@ -40,41 +40,45 @@ header {
   top: 0;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background:  #FFFDFF; 
+}
 
-.font-extralight {
-  font-family: "Nunito", sans-serif;
-    font-weight: 200;
-  }
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 40;
+    background:  #FFFDFF; 
+}
 
-  .font-light {
-    font-family: "Nunito", sans-serif;
-    font-weight: 300;
-  }
+.header-font {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
 
-  .font-regular {
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-  }
+.title-font {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
 
-  .font-medium {
-    font-family: "Nunito", sans-serif;
-    font-weight: 500;
-  }
+.bg-dark-blue {
+  background-color: #033357; 
+  color: #FFFDFF; 
+}
 
-  .font-semibold {
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-  }
 
-  .font-bold {
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-  }
 
-  .font-extrabold {
-    font-family: "Nunito", sans-serif;
-    font-weight: 800;
-  }
 
 
 /* Aspect Ratio  */

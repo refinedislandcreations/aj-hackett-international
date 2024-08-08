@@ -1,0 +1,57 @@
+---
+layout: default
+title: 
+seo:
+  title: 
+  description: 
+  keywords:
+    - 
+  social_image: 
+  hide-from-google: true
+header:
+ - image: /images/temp-img.jpg
+   position: 
+   label: 
+   title: Skypark by AJ Hackett
+   text: Every day, do something that reminds you that you’re still alive.
+site:
+ - location: Cairns
+   url:
+   image: /images/temp-img.jpg
+   image-position:
+   image-alt:
+   experiences: 
+   - "Bungy Jump" 
+   - "Giant swing"
+   - "Bungy roof"
+   - "Walk the Plank"
+   description: First opened in 1990, Skypark Cairns by AJ Hackett is a rainforest world of adventure that needs to be seen to be believed. Offering a range of exciting experiences, it has something for everyone—from thrill-seekers to spectators—and is home to Australia’s ONLY Bungy, Giant Swing, Cairns’ highest viewing platform, and Walk the Plank!
+---
+
+<section class="px-5p pt-10p">
+
+    <div class="pb-10p">
+        <p class="pb-2p"> 2020 shaped up to be a year unlike any other. On top of managing a global pandemic, <strong> we celebrated our 30th birthday in both Cairns and Normandie and launched our new brand identity—Skypark by AJ Hackett</strong>.</p>
+        <p class="pb-2p"> Skypark celebrates everything that AJ Hackett is famous for: <strong> creating positively life-changing experiences through our range of gravity-defying activities while creating a destination of all-inclusive fun activities you will want to keep coming back for</strong>.</p>
+        <p> Check out each individual site to experience the many worlds of Skypark by AJ Hackett.</p>
+    </div>
+
+</section>
+
+<section class="px-5p">
+    {% for item in page.site %}
+        <h3 class="title-font text-4xl pb-1p"> {{ item.location }} </h3>
+        <hr class="pb-1p">
+        <div class="relative h-full min-h-30 sm:min-h-50">
+            <a href="{{ item.url }}">
+                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+            </a>
+        </div>
+        <h4 class="uppercase text-2xl py-1p">
+            {% for experience in item.experiences %}
+                {{ experience }}{% if forloop.last == false %} | {% endif %}
+            {% endfor %}
+        </h4>
+        <p>{{ item.description }}</p>
+    {% endfor %}
+</section>

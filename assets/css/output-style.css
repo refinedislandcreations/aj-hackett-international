@@ -468,11 +468,11 @@ a {
 .z-50 {
   z-index: 50;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.col-span-9 {
+  grid-column: span 9 / span 9;
 }
 .col-span-full {
   grid-column: 1 / -1;
@@ -518,11 +518,11 @@ a {
 .max-w-screen-2xl {
   max-width: 1536px;
 }
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -539,8 +539,14 @@ a {
 .justify-between {
   justify-content: space-between;
 }
+.gap-5 {
+  gap: 1.25rem;
+}
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.border-r {
+  border-right-width: 1px;
 }
 .bg-cover {
   background-size: cover;
@@ -569,8 +575,20 @@ a {
 .pb-2p {
   padding-bottom: 2%;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
 .pb-5p {
   padding-bottom: 5%;
+}
+.pl-5 {
+  padding-left: 1.25rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
+}
+.pr-5p {
+  padding-right: 5%;
 }
 .pt-10p {
   padding-top: 10%;
@@ -578,15 +596,18 @@ a {
 .pt-2p {
   padding-top: 2%;
 }
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 1;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -598,10 +619,6 @@ a {
 }
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.2;
-}
-.text-2xl {
-  font-size: 1.5rem;
   line-height: 1.2;
 }
 .uppercase {

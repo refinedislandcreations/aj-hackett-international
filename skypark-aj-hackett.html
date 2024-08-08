@@ -26,6 +26,43 @@ site:
    - "Bungy roof"
    - "Walk the Plank"
    description: First opened in 1990, Skypark Cairns by AJ Hackett is a rainforest world of adventure that needs to be seen to be believed. Offering a range of exciting experiences, it has something for everyone—from thrill-seekers to spectators—and is home to Australia’s ONLY Bungy, Giant Swing, Cairns’ highest viewing platform, and Walk the Plank!
+   url:
+   url-alt:
+ - location: Macau
+   url:
+   url-alt:
+   image: /images/temp-img.jpg
+   image-position:
+   image-alt:
+   experiences: 
+   - "Bungy Jump" 
+   - "Sky Jump"
+   - "Sky Walk"
+   - "Tower Climb"
+   description: The sky is the playground when you visit Macau Tower. The top of the Macau Tower promises a sweeping, unobstructed view of the Macau islands, all the way to Hengqin, Zhuhai, and the neighboring mainland China. Skypark Macau Tower is home to the 2007 Guinness World Record for the Highest Commercial Bungy Jump (Building). At 233 meters, you can live on the edge and take the plunge or enjoy a leisurely walk around the Skywalk platform with your friends and family. Become your favorite superhero with Skyjump or conquer the world's only urban Tower Climb and Macau’s highest summit at 338 meters.
+ - location: Sentosa
+   url:
+   url-alt:
+   image: /images/temp-img.jpg
+   image-position:
+   image-alt:
+   experiences: 
+   - "Bungy Jump" 
+   - "Giant Swing"
+   - "Skybridge"
+   description: Standing 47 meters above the most stunning scenery in Singapore, you can take in the view across the ocean, take a deep breath, and then take the plunge at Singapore’s only bungy jump. On the Giant Swing, up to three people can experience a rush as they are winched 40 meters above the ground, enjoying an epic view across Siloso Beach and soaring at speeds of up to 120 km/h.
+ - location: Normandie 
+   url:
+   url-alt:
+   image: /images/temp-img.jpg
+   image-position:
+   image-alt:
+   experiences:  
+   - "Bungy Jump" 
+   - "Skyrope"
+   - "Giant Swing"
+   - "Scable"
+   description: Enjoy the thrill of the Souleuvre Valley in Normandie with Skypark Normandie by AJ Hackett! The first jumps took place in November 1990, after six months of hard work, and the Souleuvre Viaduct now gives adrenaline-seekers in Normandie the chance to get their thrills! In particular, with the opening of the giant zip line in 1999, the Glass Skycube offering a panoramic view of the entire Souleuvre Valley in 2022, and the new feature in 2024—the pendulum jump called Skyrope. Since then, the company's primary objective has been to protect the Souleuvre Valley (over 1,000 hectares) by giving it protected status while making it a major European tourist destination for everyone, from thrill-seekers to nature lovers.
 ---
 
 <section class="px-5p pt-10p">
@@ -52,6 +89,9 @@ site:
                 {{ experience }}{% if forloop.last == false %} | {% endif %}
             {% endfor %}
         </h4>
-        <p>{{ item.description }}</p>
+        <p class="pb-2p">{{ item.description }}</p>
+        <div class="mb-10p">
+            <a href="{{ item.url }}" class="button" aria-label="{{ item.url-alt }}">Visit the site</a>
+        </div>
     {% endfor %}
 </section>

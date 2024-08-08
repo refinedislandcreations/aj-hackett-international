@@ -485,6 +485,9 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-10p {
+  margin-bottom: 10%;
+}
 .mb-5p {
   margin-bottom: 5%;
 }
@@ -493,6 +496,9 @@ a {
 }
 .mt-10p {
   margin-top: 10%;
+}
+.mt-5p {
+  margin-top: 5%;
 }
 .flex {
   display: flex;
@@ -572,16 +578,15 @@ a {
   padding-left: 5%;
   padding-right: 5%;
 }
-.py-2p {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
 .py-1p {
   padding-top: 1%;
   padding-bottom: 1%;
 }
 .pb-10p {
   padding-bottom: 10%;
+}
+.pb-1p {
+  padding-bottom: 1%;
 }
 .pb-2p {
   padding-bottom: 2%;
@@ -612,12 +617,6 @@ a {
 }
 .pt-5 {
   padding-top: 1.25rem;
-}
-.pb-1p {
-  padding-bottom: 1%;
-}
-.pt-1p {
-  padding-top: 1%;
 }
 .text-center {
   text-align: center;
@@ -715,6 +714,24 @@ header {
 .bg-dark-blue {
   background-color: #033357; 
   color: #FFFDFF; 
+}
+
+.button {
+  border-width: 2.5px;
+  border-color: #033357;
+  border-radius: 0.25rem;
+  background-color: #033357;
+  color: #FFFDFF; 
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.button-block:hover {
+  border-color: #033357;
+  background-color: inherit;
+  color:#033357;
 }
 
 

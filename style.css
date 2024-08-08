@@ -77,6 +77,24 @@ header {
   color: #FFFDFF; 
 }
 
+.button {
+  border-width: 2.5px;
+  border-color: #033357;
+  border-radius: 0.25rem;
+  background-color: #033357;
+  color: #FFFDFF; 
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.button-block:hover {
+  border-color: #033357;
+  background-color: inherit;
+  color:#033357;
+}
+
 
 
 

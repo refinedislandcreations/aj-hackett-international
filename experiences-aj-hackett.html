@@ -1,0 +1,111 @@
+---
+layout: default
+title: 
+seo:
+  title: 
+  description: 
+  keywords:
+    - 
+  social_image: 
+  hide-from-google: true
+header:
+ - image: /images/temp-img.jpg
+   position: 
+   label: 
+   title: Experiences
+   text: Every day, do something that reminds you that you’re still alive.
+quote-image: /images/temp-img.jpg
+experience:
+ - name: Bungy
+   id: "bungy"  
+   url: "https://example.com/bungee"
+   image: /images/temp-img.jpg
+   image-position: center
+   image-alt: "Bungy Jump"
+   locations: 
+   - name: "Cairns"
+     url: "https://example.com/cairns"
+     url-alt: "Visit Cairns"
+   - name: "Sentosa"
+     url: "https://example.com/sentosa"
+     url-alt: "Visit Sentosa"
+     description: "Inspired by the Vanuatu ritual called land diving and the Oxford University Dangerous Sports Club’s experimental jumps in the 1970s, AJ and fellow adventurer Chris Sigglekow sought ways to make bungy jumping safe. By the mid-80s, AJ had created a super-stretchy elastic bungy cord that performed safely and consistently, with cords created at custom lengths that allowed for various jump heights and locations."
+---
+
+<section class="px-5p pt-10p pb-5p">
+
+    <div class="pb-5p">
+        <p class="pb-2p"> At AJ Hackett Skypark, adventure awaits around every corner! Dive into a world of excitement with our exhilarating activities designed for thrill-seekers and families alike. Whether you’re soaring through the sky on our iconic bungy jumps, experiencing the rush of our giant swings, or gliding along breathtaking ziplines, each experience offers a unique way to challenge yourself and enjoy stunning views. Explore our sky-high attractions, including the Skybridge, Skycube, and the nostalgic Walk The Plank, or engage in fun-filled activities like luge rides, adventure parks, and climbing walls. Whatever your adrenaline level, there’s something for everyone to enjoy at AJ Hackett Skypark—come and create unforgettable memories!</p>
+        <p> Check out each individual experience of Skypark by AJ Hackett.</p>
+    </div>
+
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Bungy </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Swings </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Ziplines </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Skybrige & Skycube </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Walk The Plank </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Luge </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Adventure Parks  </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Climbing Walls </h3>
+    </a>
+    <hr class="pb-1p">
+    <a href="#">
+        <h3 class="title-font text-xl pb-1p"> Climbing Walls </h3>
+    </a>
+    <hr class="pb-1p">
+    
+</section>
+
+
+<!-----BG and Text-------->
+
+<section class="mt-5p"> 
+    <div class="bg-cover bg-no-repeat relative" style="background-image: url('{{ page.quote-image }}'); height: 24rem;">
+        <div class="flex flex-col justify-center h-full p-5">
+            <p class="header-font text-6xl">Challenge life. <br> Challenge yourself.</p>
+        </div>
+    </div>
+</section>
+
+<section class="px-5p">
+    {% for item in page.experience %}
+    <div class="pt-5p" id="{{ item.id }}">
+        <h3 class="title-font text-4xl pb-1p"> {{ item.name }} </h3>
+        <hr class="pb-1p">
+        <div class="relative h-full min-h-30 sm:min-h-50">
+            <a href="{{ item.url }}">
+                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+            </a>
+        </div>
+        <h4 class="uppercase text-2xl py-1p">
+            {% for location in item.locations %}
+                <a href="{{ location.url }}" alt="{{ location.url-alt }}">{{ location.name }}</a>{% if forloop.last == false %} | {% endif %}
+            {% endfor %}
+        </h4>
+        <p class="pb-2p">{{ item.description }}</p>
+    </div>
+    {% endfor %}
+</section>
+

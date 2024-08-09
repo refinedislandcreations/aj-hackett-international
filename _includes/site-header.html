@@ -1,3 +1,5 @@
+<!---------
+
 <section class="max-w-screen-2xl mx-auto">
     <div class="top-0 left-0 right-0 sm:flex justify-between items-center px-2p pt-2p fixed w-full z-50">
         <a href="/index.html" aria-label="Go to homepage" class="z-30">
@@ -35,6 +37,83 @@
         </nav>
     </div>
 </div>
+
+<section class="mt-10p"> 
+    {% for item in page.header %}
+    <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p" style="background-image: url('{{ item.image }}'); height: 34rem;">
+        <div class="flex flex-col justify-end h-full p-5">
+            <div class="bg-dark-blue p-5 relative" style="margin-right: -5rem; margin-top: 40%; margin-left: 30%;">
+                <div style="margin-right: 10%;">
+                    <h1 class="header-font text-6xl">{{ item.title }}</h1>
+                    <p class="text-xl uppercase">{{ item.text }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+------------->
+
+
+<section class="max-w-screen-2xl mx-auto">
+    <div class="top-0 left-0 right-0 sm:flex justify-between items-center px-2 pt-2 fixed w-full z-50">
+        <a href="/index.html" aria-label="Go to homepage" class="z-30">
+            <img src="/images/logo-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="w-48">
+        </a>
+        
+        <div class="text-right">
+            <div class="hamburger-wrapper">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="mobile-menu">
+    <div class="mobile-menu-content">
+        <a href="/index.html" aria-label="Go to homepage">
+            <img src="/images/logo-white-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="logo">
+        </a>
+        <button class="close-button" aria-label="Close menu">&times;</button>
+        <nav>
+            <a href="#">AJ Hackett</a>
+            <div class="submenu">
+                <a href="#" class="pl-5p pb-2p">Meet AJ Hackett</a>
+                <a href="#" class="pl-5p">Timeline</a>
+            </div>
+            <a href="#" class="pt-5p">Our Brands</a>
+            <div class="submenu">
+                <a href="#" class="pl-5p pb-2p">Skypark by AJ Hackett</a>
+                <a href="#" class="pl-5p">Pondok Santi Estate</a>
+            </div>
+            <a href="#" class="pt-5p">Our Experiences</a>
+            <a href="#" class="pt-5p">Projects</a>
+            <a href="#" class="pt-5p">Sustainability</a>
+            <div class="submenu">
+                <a href="#" class="pl-5p pb-2p">Accessibility</a>
+                <a href="#" class="pl-5p pb-2p">Reconciliation</a>
+                <a href="#" class="pl-5p">Community</a>
+            </div>
+            <a href="#" class="pt-5p">Get to Know Us</a>
+            <div class="submenu">
+                <a href="#" class="pl-5p pb-2p">Meet Our Team</a>
+                <a href="#" class="pl-5p pb-2p">Our Purpose</a>
+                <a href="#" class="pl-5p pb-2p">Our Promise</a>
+                <a href="#" class="pl-5p pb-2p">Our Values</a>
+            </div>
+            <a href="#" class="pt-5p">Safety Management</a>
+            <a href="#" class="pt-5p">Contact Us</a>
+        </nav>
+    </div>
+</div>
+
+
+
 
 <section class="mt-10p"> 
     {% for item in page.header %}

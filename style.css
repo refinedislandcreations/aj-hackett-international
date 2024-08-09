@@ -95,8 +95,14 @@ header {
   color:#033357;
 }
 
+.grow { 
+  transition: transform .2s ease-in-out; 
+  display: inline-block;
+}
 
-
+.grow:hover { 
+  transform: scale(1.1); 
+}
 
 
 /* Aspect Ratio  */
@@ -112,3 +118,126 @@ header {
 .g-bg-pos-l { background-position: left; }
 .g-bg-pos-r { background-position: right; }
 
+
+.hamburger-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  right: 5%;
+  top: 5%;
+  z-index: 1000;
+  position: fixed;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+}
+
+.hamburger-menu span {
+  background-color: #033357;
+  height: 4px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu {
+  display: fixed;
+  background-color: #033357; /* Dark blue background */
+  color: #FFFDFF; /* Light text color */
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  right: -500px; /* Initially hidden off-screen */
+  width: 440px; /* Width of the menu */
+  height: 100vh;
+  text-align: left;
+  overflow-y: auto;
+  z-index: 50;
+  transition: right 0.3s ease; /* Slide effect */
+  border-left: 4px solid #D2AE39; /* Yellow left border */
+}
+
+.mobile-menu.active {
+  right: 0; /* Slide in */
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile-menu a {
+  text-decoration: none; 
+  color: #FFFDFF; /* Light text color */
+  /* padding: 1rem; */
+  display: block;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.submenu {
+  margin-top: 0.5rem;
+  /* padding-left: 1.5rem;  Indent submenus */
+  border-left: 2px solid #D2AE39; 
+  margin-left: 5%;
+}
+
+.submenu a {
+  font-size: 1.1rem; /* Slightly smaller for subpages */
+}
+
+.logo {
+  width: 80%; /* Logo size in mobile menu */
+  margin-bottom: 2rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #FFFDFF; /* Light text color */
+  font-size: 2rem; /* Size of the close icon */
+  position: absolute; /* Position it in the top-right corner */
+  top: 1rem; /* Adjust as needed */
+  right: 1rem; /* Adjust as needed */
+  cursor: pointer;
+}
+
+
+
+
+
+footer {
+  background-color: #033357; /* Dark blue */
+  color: #FFFDFF; /* Light text color */
+}
+
+.footer-logo img {
+  width: 100%; /* Responsive logo */
+  max-width: 200px; /* Set a max width */
+}
+
+.footer-link {
+  display: block; /* Ensure each link is a block element */
+  color: #FFFDFF; /* Light text color */
+  text-decoration: none;
+  padding: 0.5rem 0; /* Adjusted padding for cleaner look */
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #D2AE39; /* Gold hover effect */
+}
+
+.submenu {
+  padding-left: 1.25rem; /* Adjusted indent for better visibility */
+  margin-top: 0.25rem; /* Space above submenu items */
+}
+
+.text-gray-300 {
+  color: #B0BEC5; /* Light gray for footer text */
+  margin-top: 1rem;
+}

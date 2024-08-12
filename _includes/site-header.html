@@ -1,61 +1,3 @@
-<!---------
-
-<section class="max-w-screen-2xl mx-auto">
-    <div class="top-0 left-0 right-0 sm:flex justify-between items-center px-2p pt-2p fixed w-full z-50">
-        <a href="/index.html" aria-label="Go to homepage" class="z-30">
-            <img src="/images/logo-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="w-48">
-        </a>
-        <div class="hidden md:flex">
-            <nav>
-                <a href="#" aria-label="#" class="ml-4">#</a>
-                <a href="#" aria-label="#" class="ml-4">#</a>
-                <a href="#" aria-label="#" class="ml-4">#</a>
-            </nav>
-        </div>
-        <div class="text-right md:hidden">
-            <div class="hamburger-wrapper">
-                <div class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="mobile-menu md:hidden fixed top-0 left-0 right-0 z-40">
-    <span class="close-button">&times;</span>
-    <div class="text-center flex flex-col justify-center items-center">
-        <a href="/index.html" aria-label="Go to homepage">
-            <img src="/images/logo-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="w-44 sm:w-72">
-        </a>
-        <nav>
-            <a href="#" aria-label="#" class="ml-4">#</a>
-            <a href="#" aria-label="#" class="ml-4">#</a>
-            <a href="#" aria-label="#" class="ml-4">#</a>
-        </nav>
-    </div>
-</div>
-
-<section class="mt-10p"> 
-    {% for item in page.header %}
-    <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p" style="background-image: url('{{ item.image }}'); height: 34rem;">
-        <div class="flex flex-col justify-end h-full p-5">
-            <div class="bg-dark-blue p-5 relative" style="margin-right: -5rem; margin-top: 40%; margin-left: 30%;">
-                <div style="margin-right: 10%;">
-                    <h1 class="header-font text-6xl">{{ item.title }}</h1>
-                    <p class="text-xl uppercase">{{ item.text }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-</section>
-
-------------->
-
-
 <section class="max-w-screen-2xl mx-auto">
     <div class="top-0 left-0 right-0 sm:flex justify-between items-center px-2 pt-2 fixed w-full z-50">
         <a href="/index.html" aria-label="Go to homepage" class="z-30">
@@ -115,14 +57,14 @@
 
 
 
-<section class="mt-10p"> 
+<section class="mt-30p sm:mt-10p"> 
     {% for item in page.header %}
     <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p" style="background-image: url('{{ item.image }}'); height: 34rem;">
         <div class="flex flex-col justify-end h-full p-5">
-            <div class="bg-dark-blue p-5 relative" style="margin-right: -5rem; margin-top: 40%; margin-left: 30%;">
+            <div class="bg-dark-blue p-5 relative header-box">
                 <div style="margin-right: 10%;">
-                    <h1 class="header-font text-6xl">{{ item.title }}</h1>
-                    <p class="text-xl uppercase">{{ item.text }}</p>
+                    <h1 class="header-font text-2xl sm:text-6xl">{{ item.title }}</h1>
+                    <p class="text-lg sm:text-xl uppercase">{{ item.text }}</p>
                 </div>
             </div>
         </div>

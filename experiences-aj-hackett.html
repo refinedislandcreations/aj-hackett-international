@@ -221,8 +221,8 @@ experience:
 <section class="px-5p pt-10p pb-5p">
 
     <div class="pb-5p">
-        <p class="pb-2p"> At AJ Hackett Skypark, adventure awaits around every corner! Dive into a world of excitement with our exhilarating activities designed for thrill-seekers and families alike. Whether you’re soaring through the sky on our iconic bungy jumps, experiencing the rush of our giant swings, or gliding along breathtaking ziplines, each experience offers a unique way to challenge yourself and enjoy stunning views. Explore our sky-high attractions, including the Skybridge, Skycube, and the nostalgic Walk The Plank, or engage in fun-filled activities like luge rides, adventure parks, and climbing walls. Whatever your adrenaline level, there’s something for everyone to enjoy at AJ Hackett Skypark—come and create unforgettable memories!</p>
-        <p> Check out each individual experience of Skypark by AJ Hackett.</p>
+        <p class="pb-5p sm:pb-2p"> At AJ Hackett Skypark, adventure awaits around every corner! Dive into a world of excitement with our exhilarating activities designed for thrill-seekers and families alike. Whether you’re soaring through the sky on our iconic bungy jumps, experiencing the rush of our giant swings, or gliding along breathtaking ziplines, each experience offers a unique way to challenge yourself and enjoy stunning views. Explore our sky-high attractions, including the Skybridge, Skycube, and the nostalgic Walk The Plank, or engage in fun-filled activities like luge rides, adventure parks, and climbing walls. Whatever your adrenaline level, there’s something for everyone to enjoy at AJ Hackett Skypark—come and create unforgettable memories!</p>
+        <p class="pb-5p"> Check out each individual experience of Skypark by AJ Hackett.</p>
     </div>
 
     <a href="#">
@@ -270,7 +270,7 @@ experience:
 <section class="my-5p"> 
     <div class="bg-cover bg-no-repeat relative" style="background-image: url('{{ page.quote-image }}'); height: 24rem;">
         <div class="flex flex-col justify-center h-full p-5">
-            <p class="header-font text-6xl">Challenge life. <br> Challenge yourself.</p>
+            <p class="header-font text-4xl sm:text-6xl">Challenge life. <br> Challenge yourself.</p>
         </div>
     </div>
 </section>
@@ -282,7 +282,7 @@ experience:
     {% for item in page.experience %}
     <div class="pt-10p" id="{{ item.id }}">
         <h3 class="title-font text-4xl pb-1p">{{ item.name }}</h3>
-        <hr class="pb-1p">
+        <hr class="pb-2p sm:pb-1p">
 
         <!-- Large Featured Image -->
         <div class="relative h-full min-h-30 sm:min-h-50">
@@ -296,17 +296,17 @@ experience:
             {% for image in item.gallery-images %}
                <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
                   <div class="aspect-square relative">
-                        <img class="w-full h-full object-cover object-center rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
+                        <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
                   </div>
                </a>
             {% endfor %}
          </div>
 
         <!-- Description -->
-        <p class="pt-2p">{{ item.description }}</p>
+        <p class="pt-5p sm:pt-2p">{{ item.description }}</p>
 
         <!-- Location Links -->
-        <h4 class="uppercase text-2xl py-1p">
+        <h4 class="uppercase text-2xl py-2p sm:py-1p">
             {% for location in item.locations %}
                 <a href="{{ location.url }}" alt="{{ location.url-alt }}" class="grow">{{ location.name }}</a>{% if forloop.last == false %} | {% endif %}
             {% endfor %}

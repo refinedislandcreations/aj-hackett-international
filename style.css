@@ -122,8 +122,8 @@ header {
 .hamburger-wrapper {
   cursor: pointer;
   display: inline-block;
-  right: 5%;
-  top: 5%;
+  right: 19%;
+  top: 3.2%;
   z-index: 1000;
   position: fixed;
 }
@@ -147,11 +147,11 @@ header {
   display: fixed;
   background-color: #033357; /* Dark blue background */
   color: #FFFDFF; /* Light text color */
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
   top: 0;
   right: -500px; /* Initially hidden off-screen */
-  width: 440px; /* Width of the menu */
+  width: 300px; /* Width of the menu */
   height: 100vh;
   text-align: left;
   overflow-y: auto;
@@ -161,7 +161,7 @@ header {
 }
 
 .mobile-menu.active {
-  right: 0; /* Slide in */
+  right: 45px; 
 }
 
 .mobile-menu-content {
@@ -191,7 +191,7 @@ header {
 }
 
 .logo {
-  width: 80%; /* Logo size in mobile menu */
+  width: 70%; /* Logo size in mobile menu */
   margin-bottom: 2rem;
 }
 
@@ -205,9 +205,6 @@ header {
   right: 1rem; /* Adjust as needed */
   cursor: pointer;
 }
-
-
-
 
 
 footer {
@@ -240,4 +237,30 @@ footer {
 .text-gray-300 {
   color: #B0BEC5; /* Light gray for footer text */
   margin-top: 1rem;
+}
+
+.header-box {
+  margin-right: -5rem; 
+  margin-top: 40%; 
+  margin-left: 1%;
+}
+
+@media (min-width:650px) {
+
+  .header-box {
+    margin-right: -5rem; 
+    margin-top: 40%; 
+    margin-left: 30%;
+  }
+
+  .logo {
+    width: 80%; /* Logo size in mobile menu */
+    margin-bottom: 2rem;
+  }
+
+  .mobile-menu {
+    width: 440px; /* Width of the menu */
+    padding: 2rem;
+  }
+
 }

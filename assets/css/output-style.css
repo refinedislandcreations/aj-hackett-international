@@ -911,6 +911,9 @@ header {
 }
 
 
+
+
+
 footer {
   background-color: #033357; /* Dark blue */
   color: #FFFDFF; /* Light text color */
@@ -922,6 +925,7 @@ footer {
 }
 
 .footer-link {
+  display: block; /* Ensure each link is a block element */
   color: #FFFDFF; /* Light text color */
   text-decoration: none;
   padding: 0.5rem 0; /* Adjusted padding for cleaner look */

@@ -543,6 +543,9 @@ a {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -569,9 +572,6 @@ a {
 }
 .gap-6 {
   gap: 1.5rem;
-}
-.overflow-hidden {
-  overflow: hidden;
 }
 .overflow-x-auto {
   overflow-x: auto;

@@ -9,3 +9,13 @@ $(document).ready(function() {
         $('.hamburger-menu').removeClass('active');
     });
 });
+
+
+
+// lightgallery
+
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    getCaptionFromTitleOrAlt: false,
+     download: false    
+});

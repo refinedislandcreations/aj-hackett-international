@@ -1,0 +1,80 @@
+---
+layout: default
+title: 
+seo:
+  title: 
+  description: 
+  keywords:
+    - 
+  social_image: 
+  hide-from-google: true
+header:
+ - image: /images/meet-aj-hackett-aj-hackett-international.png
+   position: 
+   label: 
+   title: Meet the team
+   text: A life less ordinary
+people:
+ - name: AJ Hackett
+   image: /images/aj-hackett-meet-the-team-aj-hackett-international.png
+   image-position: 
+   image-alt: AJ Hackett
+   about: "AJ Hackett, the founding father and pioneer behind the commercialization of Bungy Jumping, remains an integral part of the AJ Hackett International team. His 35+ years of experience in Adventure Tourism are invaluable, including his receipt of the GUSI Peace Prize for outstanding innovation in Tourism. <br> AJ was a major contributor to the Bungy Code of Conduct, ASNZ 5848, which is still in use today across Australia and New Zealand. He has also successfully established Adventure Tourism operations on four different continents. He continues to be a vital member of the team, contributing to the ongoing development of our existing Skyparks and future expansion into new destinations."
+ - name: Danny Hughes
+   image: /images/danny-hughes-aj-hackett-international.png
+   image-position: 
+   image-alt: Danny Hughes
+   about: "Danny Hughes has been the CEO of AJ Hackett International since 2021. With over 13 years of experience in Sports and Adventure Tourism, he first joined the team as the General Manager of Skypark Cairns in 2019. He has facilitated the creation of Dreamtime Dive and Snorkel in Cairns, a project aimed at employing local Aboriginal and Torres Strait Islander peoples. As Chief Operating Officer, he oversaw Skydive Australia, White Water Rafting, Hot Air Ballooning, Helicopter Scenic Flights, and various tours to the Great Barrier Reef. Prior to this, Danny was the Co-Founder of Gulf Multi Sport, a sports events management company organizing community and mass participation events, including World Triathlon Abu Dhabi and Multi-National “Colour Run” events across the Middle East."
+ - name: Elaine Hackett
+   image: /images/elaine-hackett-aj-hackett-international.png
+   image-position: 
+   image-alt: Elaine Hackett
+   about: "Elaine Hackett, the CFO of AJ Hackett International, is AJ Hackett's younger sister and right-hand woman. She is an essential part of the company. She joined in 1988 in Queenstown, just a few weeks after the opening of the Kawarau Bridge. Prior to that, she had been working in finance in the Sydney CBD. Since then, she has traveled around the globe to places such as Bali, Cairns, the USA, and France, working with our new AJ Hackett International businesses. She took on the role of Western General Manager in Acapulco, Mexico, from 1998 to 2002. Since then, she has been based in Cairns, heading the international financial department of our group of companies."
+ - name: Dean Hackett
+   image: /images/dean-hackett-aj-hackett-international.png
+   image-position: 
+   image-alt: Dean Hackett
+   about: "Dean Hackett, AJ Hackett's son, is the Managing Director of Pondok Santi Estate in Indonesia. He first joined AJ Hackett International in 2010 on the adventure tourism side of the company and gathered operational experience in Cairns for two years. He then moved on to Normandy, where he stayed until 2018. Since then, he has headed AJ Hackett International's luxury boutique resort."
+ - name: Jayde Hackett
+   image: /images/jayde-hackett-aj-hackett-international.png
+   image-position: 
+   image-alt: Jayde Hackett
+   about: "Jayde Hackett, the son of AJ Hackett, has nine years of experience working in adventure tourism to date and played a critical role in the operations and training of crew for Skypark Sentosa in Singapore. He held the position of General Manager at Skypark Sentosa for two years and moved into the COO role for AJ Hackett International in 2022. He is heavily involved in future projects for Skypark by AJ Hackett, including the expansion developments in the Australian territory."
+ - name: Adam Lichtenstein
+   image: /images/adam-lichtenstein-aj-hackett-international.png
+   image-position: 
+   image-alt: Adam Lichtenstein
+   about: "Adam Lichtenstein started working with AJ Hackett in 1990 in Cairns, Australia. He moved to Macau in 2005 as a consultant and then took on the General Manager position at Skypark Macau Tower in 2013. His extensive experience in project management led him to consult on the majority of our new sites since 1995, and in 2021, he assumed the position of Group Special Projects."
+ - name: Karl Van Uden
+   image: /images/karl-van-uden-aj-hackett-international.png
+   image-position: 
+   image-alt: Karl Van Uden
+   about: "Karl Van Uden is AJHI's Group Head of Safety and Compliance and is responsible for the operational and safety SOPs for all existing and future AJ Hackett International sites globally. He started with AJ Hackett in 2004 and has experience working in Cairns, Malaysia, and Macau, taking on the Operations Manager role at Skypark Macau Tower in 2008. He has worked on multiple projects throughout Asia, including the KL Tower, Guangzhou Tower, and Zhangjiajie Glass Bridge."
+---
+
+<section class="px-5p pt-10p pb-5p">
+
+    <div class="pb-5p">
+        <p class="pb-5p sm:pb-2p"> Intro text </p>
+    </div>
+
+    <section>
+        {% for person in page.people %}
+        <div class="grid grid-cols-5 gap-5 mb-5p">
+          <div class="col-span-2">
+            <div class="relative h-full min-h-30 sm:min-h-50">
+              <img class="absolute inset-0 w-full h-full object-cover rounded-3xl"
+                   src="{{ person.image }}" 
+                   style="object-position: {{ person['image-position'] }};" 
+                   alt="{{ person['image-alt'] }}" />
+            </div>
+          </div>
+          <div class="col-span-3 pl-5p">
+            <p class="title-font text-4xl pb-1p"> {{ person.name }} </p>
+            <p> {{ person.about }} </p>
+          </div>
+        </div>
+        {% endfor %}
+      </section>
+      
+  

@@ -537,6 +537,9 @@ a {
 .grow {
   flex-grow: 1;
 }
+.list-disc {
+  list-style-type: disc;
+}
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -575,6 +578,11 @@ a {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -619,6 +627,10 @@ a {
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
+}
+.py-10p {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .py-1p {
   padding-top: 1%;

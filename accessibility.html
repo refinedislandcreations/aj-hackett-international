@@ -1,0 +1,46 @@
+---
+layout: default
+title: 
+seo:
+  title: 
+  description: 
+  keywords:
+    - 
+  social_image: 
+  hide-from-google: true
+header:
+ - image: /images/pondok-santi-estate-on-gili-trawangan-lombok.png
+   position: 
+   label: 
+   title: Accessibility
+   text: Every day, do something that reminds you that you’re still alive.
+gallery-images:
+ - img-url: /images/accessibility-aj-hackett-international.png
+   img-alt: 
+ - img-url: /images/normandie-accessibility-aj-hackett-international.png
+   img-alt: 
+---
+
+<section class="px-5p pt-10p">
+
+    <div class="pb-5p">
+        <p class="pb-2p"> Our company has a long history of catering to visitors with special needs. The majority of the activities we offer do not rely on the physical or mental ability of the individual. We have guided people with various disabilities through our activity experiences. For example, it’s common to see individuals bungy jumping in their wheelchairs or being accompanied on a zipline and other activities at our sites. </p>
+        <p class="pb-2p"> This brings us to the concept of personal challenge learning and what it means to push oneself just a little further and outside their comfort zone. Our teams are specialists at guiding people through breaking their barriers, whether it’s a child navigating a zipline park or a parent’s first bungy jump. We also specialize in team bonding events, school trips, and behind-the-scenes tours where people can learn about the technical aspects of our industry. </p>
+        <p class="pb-2p"> Our purpose is built upon the idea of building confidence through challenging oneself—doing something you never thought you could do. This approach helps you confront real-life challenges with increased confidence. With mental health being a significant issue post-pandemic, the concept of learning through physical activities will play a crucial and enduring role. </p>
+    </div>
+
+</section>
+
+
+<section class="px-5p pb-10p">
+  <!-- Gallery Images -->
+  <div class="grid grid-cols-2 gap-1 w-full overflow-x-auto" id="lightgallery">
+    {% for image in page.gallery-images %}
+    <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
+      <div class="aspect-square relative">
+        <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

@@ -480,6 +480,12 @@ a {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
 .mx-5p {
   margin-left: 5%;
   margin-right: 5%;
@@ -503,6 +509,9 @@ a {
 }
 .mt-10p {
   margin-top: 10%;
+}
+.mt-2p {
+  margin-top: 2%;
 }
 .mt-30p {
   margin-top: 30%;
@@ -549,8 +558,14 @@ a {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -604,6 +619,10 @@ a {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -711,6 +730,10 @@ a {
   font-size: 1.125rem;;
   line-height: 1.2;
 }
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.2;
@@ -792,6 +815,15 @@ header {
 .bg-dark-blue {
   background-color: #033357; 
   color: #FFFDFF; 
+}
+
+.text-dark-blue {
+  color: #033357;
+}
+
+.text-dark-blue:hover {
+  color: #033357;
+  text-decoration: underline;
 }
 
 .button {
@@ -991,6 +1023,9 @@ footer {
   }
   .sm\:grid {
     display: grid;
+  }
+  .sm\:min-h-40 {
+    min-height: 40vh;
   }
   .sm\:min-h-50 {
     min-height: 50vh;

@@ -1,0 +1,90 @@
+---
+layout: default
+title: 
+seo:
+  title: 
+  description: 
+  keywords:
+    - 
+  social_image: 
+  hide-from-google: true
+header:
+ - image: /images/temp-img.jpg
+   position: 
+   label: 
+   title: Current Projects
+   text: A life less ordinary
+cairns-roof-image: /images/cairns-australian-skypark-by-aj-hackett-international.png
+cairns-roof-position:
+cairns-roof-alt:
+cairns-cyclone-image: /images/skypark-cairns-roof-cyclone-aj-hackett-international.png
+cairns-cyclone-position:
+cairns-cyclone-alt:
+gallery-images:
+  - img-url: /images/skypark-cairns-australia-project-new-roof-aj-hackett-international.png
+    img-alt: "Alt text for image 1"
+    caption: "The shot above is when the main beams were installed."
+  - img-url: /images/skypark-cairns-project-new-roof-aj-hackett-international.png
+    img-alt: "Alt text for image 2"
+    caption: "The shot above shows when we removed the old roof."
+  - img-url: /images/skypark-cairns-project-improvements-aj-hackett-international.png
+    img-alt: "Alt text for image 1"
+    caption: "The shot above shows more of the dismantling process of the old roof."
+  - img-url: /images/skypark-cairns-australia-new-roof-aj-hackett-international.png
+    img-alt: "Alt text for image 2"
+    caption: "The photo above shows the new roof."
+---
+<!---------------Intro------------->
+<section class="px-5p pt-10p"> 
+    <div>
+        <p class="pb-5p"> Intro text to projects </p>
+    </div>
+</section>
+
+
+
+<!---------------Skypark Cairns Roof------------->
+<section class="px-5p py-10p"> 
+
+    <p class="title-font text-4xl pb-5p">Skypark Cairns Roof </p>
+
+    <div class="grid grid-cols-2 mb-5p">
+        <div class="pr-5p">
+            <p class="pb-2p"> In 2023, Skypark Cairns underwent renovations at the top of the tower. After four years of COVID, it was time to bring some changes to our site. </p>
+            <p> The aim of this project was to enhance the overall experience on the tower by providing better shelter for patrons and an amazing viewing area from the roof with uninterrupted vistas of the rainforest and the Great Barrier Reef. Additionally, we improved our Jump Menu offerings with a flat launch platform on the roof and introduced a brand-new Back Jump area, offering new thrills for all our customers to enjoy. </p>
+        </div>
+        <div class="relative h-full min-h-30 sm:min-h-50">
+            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.cairns-roof-image }}" style="object-position: {{ page.cairns-roof-position }};" alt="{{ page.cairns-roof-alt }}" />
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 mb-5p">
+        <div class="relative h-full min-h-30 sm:min-h-50">
+            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.cairns-cyclone-image }}" style="object-position: {{ page.cairns-cyclone-position }};" alt="{{ page.cairns-cyclone-alt }}" />
+        </div>
+        <div class="pl-5p">
+            <p class="pb-2p"> Located in the far north of Queensland, our site faces unique challenges, with the wet season being the most unpredictable, as well as the heat and humidity factors to contend with. </p>
+            <p class="pb-2p"> Halfway through the project, the weather took a turn for the worse, and we were hit with a cyclone followed by a year's worth of rain in just two days! We had to put the project on hold until the weather improved nearly a month later. This delayed our project timeline by nearly two months, but we got there in the end and now have an amazing product to share with the world! </p>
+            <p>The photo to the left shows us tying everything down before the cyclone.</p>
+        </div>
+    </div>
+
+    <div>
+        <p class="pb-5p"> During this project, we used local engineers and builders to complete the work, managing to minimize disruptions to the business by splitting shifts. We worked in the mornings and stayed open in the afternoons so our customers could still enjoy our activities. </p>
+    </div>
+
+    
+    <!-- Gallery Images -->
+    <div class="grid grid-cols-4 gap-1 w-full" id="lightgallery">
+        {% for image in page.gallery-images %}
+        <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
+            <div class="aspect-square relative">
+                <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
+            </div>
+            <p class="mt-2p text-center text-sm text-gray-600">{{ image.caption }}</p>
+        </a>
+        {% endfor %}
+    </div>
+    
+   
+</section>

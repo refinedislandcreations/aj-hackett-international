@@ -77,6 +77,11 @@ header {
   color: #FFFDFF; 
 }
 
+.bg-grey {
+  background-color: #F3F1EF; 
+  color:#033357; ; 
+}
+
 .text-dark-blue {
   color: #033357;
 }
@@ -111,6 +116,33 @@ header {
 
 .grow:hover { 
   transform: scale(1.1); 
+}
+
+
+
+/* Container with Scrollbar */
+.overflow-x-auto {
+  scrollbar-color: #033357 #FFFDFF; /* Scroll thumb and track color */
+  scrollbar-width: thin; /* Thinner scrollbar for Firefox */
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background-color: #FFFDFF; /* Track color */
+  border-radius: 10px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: #033357; /* Thumb color */
+  border-radius: 10px;
+  border: 2px solid #FFFDFF; /* Optional border around the thumb */
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #4A4A4A; /* Change thumb color on hover */
 }
 
 

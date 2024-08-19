@@ -1,18 +1,447 @@
 ---
 layout: default
-title: 
+title: "World-Class Adventure Tourism: Explore Thrilling Activities, Skypark Attractions, and Safety Innovations with AJ Hackett International"
 seo:
-  title: 
-  description: 
+  title: "AJ Hackett International: Thrilling Adventures with a Commitment to Safety and Sustainability"
+  description: AJ Hackett International offers exhilarating global adventure experiences, from iconic bungy jumps to innovative Skypark attractions. Discover our commitment to safety, sustainability, and community engagement as we push the boundaries of adventure tourism. Explore our unique Skypark locations, luxury retreat, and ongoing projects dedicated to environmental stewardship and inclusive adventure. Join us in experiencing the thrill of a lifetime while making a positive impact on the world.
   keywords:
-    - 
+    - Adventure tourism
+    - Bungy jumping
+    - Skypark attractions
+    - Global adventure experiences
+    - Thrilling activities
+    - Adventure parks
+    - Safety in adventure sports
+    - Sustainable adventure tourism
+    - Luxury retreats Indonesia
+    - Skypark locations
+    - Innovative adventure experiences
+    - Environmental stewardship
+    - Inclusive adventure activities
+    - Community engagement
+    - Reconciliation Action Plan
+    - Skybridge and Skycube
+    - Zipline experiences
+    - Giant swing
+    - Adventure travel
+    - Adventure tourism safety
   social_image: 
   hide-from-google: true
 header:
- - image: /images/temp-img.jpg
+ - image: /images/aj-hackett-international-banner-image.png
    position: 
    label: 
    title: AJ Hackett International
-   text: Every day, do something that reminds you that you’re still alive.
+   text: "Every day, do something that reminds you that you’re still alive."
+site:
+ - location: Cairns
+   url:
+   url-alt:
+   image: /images/cairns-australian-skypark-by-aj-hackett-international.png
+   image-position: 50% 70%
+   image-alt:
+ - location: Macau
+   url:
+   url-alt:
+   image: /images/macau-skypark-by-aj-hackett-international.png
+   image-position:
+   image-alt:
+ - location: Sentosa
+   url:
+   url-alt:
+   image: /images/temp-img.jpg
+   image-position:
+   image-alt:
+ - location: Normandie 
+   url:
+   url-alt:
+   image: /images/temp-img.jpg
+   image-position:
+   image-alt:
+pondok:
+ - image: /images/morning-light-at-pondok-santi-estate-gili-trawangan.png
+   position: 
+   alt: Morning light at Pondok Santi Estate, Gili Trawangan
+experiences:
+  - name: Bungy
+    url:
+    url-alt:
+  - name: Swings
+    url:
+    url-alt:
+  - name: Zipline
+    url:
+    url-alt:
+  - name: Skybridge & Skycube
+    url:
+    url-alt:
+  - name: Walk The Plank
+    url:
+    url-alt:
+  - name: Luge
+    url:
+    url-alt:
+  - name: Adventure Parks
+    url:
+    url-alt:
+  - name: Climbing Walls
+    url:
+    url-alt:
+projects:
+ - image: /images/skypark-cairns-australia-new-roof-aj-hackett-international.png
+   position: 
+   alt:
+sustainability:
+ - image: /images/sustainability-pondok-santi-estate-gili-trawangan-indonesia.png
+   position: 
+   alt:
+accessibility:
+ - image: /images/accessibility-aj-hackett-international.png
+   position: 
+   alt:
+reconciliation:
+ - image: /images/reconciliation-skypark-australia-aj-hackett-international.png
+   position: 
+   alt:
+community:
+ - image: /images/community-aj-hackett-international.png
+   position: 
+   alt:
+team:
+ - image: /images/meet-the-team-aj-hackett-international-banner.png
+   position: 
+   alt:
+purpose:
+ - image: /images/purpose-promise-values-aj-hackett-international.png
+   position: 
+   alt:
+safety:
+ - image: /images/safety-management-banner-aj-hackett-international.png
+   position: 
+   alt:
 ---
 
+<!-----Meet AJ-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> A warm welcome by AJ Hackett </p>
+  </div>
+
+  <div class="grid grid-cols-2 mb-5p">
+      <div class="pr-5p">
+          <p class="mb-5p"> Welcome to the World of Adventure with AJ Hackett! Dive into the story of the man who turned adrenaline into an empire. Discover more about AJ's journey and vision
+          </p>
+          <div>
+            <a href="/meet-aj-hackett.html" class="button" aria-label="">Find out more</a>
+        </div>
+      </div>
+      <div class="relative h-full min-h-30 sm:min-h-50">
+          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
+      </div>
+  </div>
+  
+</section>
+
+
+<!-----Skypark-------->
+
+<section class="px-5p pt-10p pb-5p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Skypark by AJ Hackett </p>
+  </div>
+
+  <p class="pb-5p">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
+
+  <div class="pb-5p">
+    <div class="overflow-x-auto">
+      <h4 class="uppercase text-2xl py-2p sm:py-1p whitespace-nowrap">
+        {% for item in page.experiences %}
+          <a href="{{ item.url }}" alt="{{ item.url-alt }}" class="inline-block mx-4">{{ item.name }}</a>
+          {% if forloop.last == false %} | {% endif %}
+        {% endfor %}
+      </h4>
+    </div>
+  </div>
+  
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5p">
+      {% for item in page.site %}
+        <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col">
+          <div class="relative w-full h-48">
+            <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
+                <img class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+            </a>
+        </div>
+        <h3 class="title-font text-3xl py-3">{{ item.location }}</h3>
+        <div class="mt-4">
+            <a href="{{ item.url }}" class="button">Find out more</a>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+
+<!-----Pondok Santi-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Pondok Santi Estate, Gili Trawangan </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">Discover Pondok Santi Estate, a luxurious retreat nestled in the tranquil landscapes of Indonesia. Immerse yourself in serene beauty and exceptional comfort at our boutique resort, where every moment is designed to rejuvenate and inspire.</p>
+      <div>
+        <a href="/pondok-santi-estate.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+    <!-- Image 1 -->
+    {% for item in page.pondok %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+</div>
+</section>
+
+
+
+
+<!-----Projects-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Explore Our Ongoing Projects and Upgrades </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+
+    {% for item in page.projects %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">Discover the exciting developments happening at AJ Hackett International as we continue to push the boundaries of adventure. Our ongoing projects are designed to elevate the Skypark experience with innovative upgrades and thrilling new features. Explore how we’re enhancing our sites around the globe, bringing new dimensions of excitement and comfort to our adventure parks.</p>
+      <div>
+        <a href="/projects.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+</div>
+</section>
+
+
+
+<!-----Sustainability-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Our Commitment to a Greener Future </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">Discover how AJ Hackett International is making strides toward a greener future. Our commitment to sustainability drives us to create positive impacts for our people, customers, and the planet. Explore the innovative practices we’re implementing across our Skypark locations to ensure that adventure and conservation go hand in hand. Learn more about our efforts to achieve carbon neutrality and promote environmental stewardship through various initiatives at AJ Hackett International.</p>
+      <div>
+        <a href="/sustainability.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+    <!-- Image 1 -->
+    {% for item in page.sustainability %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+</div>
+</section>
+
+
+
+<!-----Accessibility-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Embracing Accessibility for All </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+
+    {% for item in page.accessibility %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">At AJ Hackett International, we believe that adventure should be accessible to everyone, regardless of physical or mental abilities. With a rich history of guiding visitors with special needs through our activities, we ensure that everyone can experience the thrill of pushing their limits. Whether it's someone bungy jumping in a wheelchair or a parent conquering their first jump, our expert teams are dedicated to helping individuals break barriers and build confidence. Discover how our inclusive approach to adventure empowers people of all abilities to challenge themselves and embrace new experiences.</p>
+      <div>
+        <a href="/accessibility.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+</div>
+</section>
+
+
+
+
+<!-----Reconciliation-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Acknowledging the Past, Shaping the Future </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">In 2024, AJ Hackett International proudly received endorsement from Reconciliation Australia for our 'Reflect RAP'—a Reconciliation Action Plan that sets the groundwork for meaningful reconciliation initiatives across our business. We honor the Traditional Custodians by recognizing their deep connection to the land and their invaluable knowledge passed down through generations. Our partnership with the Djapugay community at Skypark Cairns serves as a guiding example for our global sites, reinforcing our commitment to sustainability and the protection of our natural environment. Explore how we are shaping a future rooted in respect and reconciliation.</p>
+      <div>
+        <a href="/reconciliation.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+    <!-- Image 1 -->
+    {% for item in page.reconciliation %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-contain" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+</div>
+</section>
+
+
+
+
+<!-----Community-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Rooted in Community: Engaging and Giving Back </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+
+    {% for item in page.community %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">At AJ Hackett International, we believe that our connection to the community is as important as the adventures we create. Our community initiatives are designed to foster deep ties with the people and places that support us, ensuring that we give back in meaningful ways. From charity events like Jump for Hope to sustainable projects at Pondok Santi Estate, we are committed to making a positive impact. Learn how we engage with and contribute to the communities that inspire us and help shape our journey.</p>
+      <div>
+        <a href="/community.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+</div>
+</section>
+
+
+
+
+<!-----Meet the team-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> The Faces Driving Our Global Adventure </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">At AJ Hackett International, our success is powered by the passion, expertise, and dedication of our extraordinary team. Each member brings a unique blend of skills and experiences that fuel our mission to push the boundaries of adventure tourism. From AJ Hackett, the trailblazing founder of bungy jumping, to our dynamic leaders and specialists, our team is the heart of our global operation. Together, they ensure every Skypark experience is exceptional, while continually shaping the future of adventure tourism. Get to know the visionaries who make our extraordinary adventures possible and learn how they’re making a difference around the world.</p>
+      <div>
+        <a href="/meet-the-team.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+    <!-- Image 1 -->
+    {% for item in page.team %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+</div>
+</section>
+
+
+
+
+
+<!-----Purpose, Promise & Values-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Our Purpose, Promise & Values </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+
+    {% for item in page.purpose %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">Discover the driving force behind AJ Hackett International. Our purpose is to inspire and empower through extraordinary adventures, while our promise focuses on sustainability and innovation. Our core values of respect, adventure, innovation, safety, and experience guide everything we do. Explore more about how these principles shape our mission and define our approach to adventure tourism. </p>
+      <div>
+        <a href="/purpose-promise-values.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+</div>
+</section>
+
+
+
+<!-----Safety Management-------->
+
+<section class="px-5p pt-10p">
+
+  <div class="pb-5p">
+      <p class="title-font text-4xl"> Safeguarding Every Adventure Through Rigorous Practices </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-5 mb-5p">
+    <!-- Text Content -->
+    <div class="col-span-1 pr-5p">
+      <p class="pb-5p">At AJ Hackett International, safety is our top priority. We are dedicated to maintaining the highest standards in health, safety, and welfare across all our adventure activities. From rigorous training and site-specific protocols to state-of-the-art equipment and regular inspections, we ensure that every experience is both thrilling and secure. Learn more about our comprehensive safety practices and how we safeguard every adventure.</p>
+      <div>
+        <a href="/safety-management.html" class="button" aria-label="">Find out more</a>
+    </div>
+    </div>
+
+    <!-- Image 1 -->
+    {% for item in page.safety %}
+    <div class="relative h-full min-h-30 sm:min-h-50">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    {% endfor %}
+</div>
+</section>

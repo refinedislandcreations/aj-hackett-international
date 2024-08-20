@@ -91,6 +91,11 @@ header {
   text-decoration: underline;
 }
 
+.contact-dark-blue {
+  color: #033357;
+  text-decoration: underline;
+}
+
 .button {
   border-width: 2.5px;
   border-color: #033357;

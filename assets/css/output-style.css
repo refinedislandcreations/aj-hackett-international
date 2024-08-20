@@ -498,6 +498,10 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.my-10p {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 .my-5p {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -516,6 +520,9 @@ a {
 }
 .mt-10p {
   margin-top: 10%;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .mt-2p {
   margin-top: 2%;
@@ -680,6 +687,9 @@ a {
 .p-5 {
   padding: 1.25rem;
 }
+.p-5p {
+  padding: 5%;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -740,6 +750,9 @@ a {
 }
 .pb-5p {
   padding-bottom: 5%;
+}
+.pl-4 {
+  padding-left: 1rem;
 }
 .pl-5 {
   padding-left: 1.25rem;
@@ -905,6 +918,11 @@ header {
 }
 
 .text-dark-blue:hover {
+  color: #033357;
+  text-decoration: underline;
+}
+
+.contact-dark-blue {
   color: #033357;
   text-decoration: underline;
 }
@@ -1155,6 +1173,9 @@ footer {
   .sm\:min-h-50 {
     min-height: 50vh;
   }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1194,5 +1215,11 @@ footer {
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

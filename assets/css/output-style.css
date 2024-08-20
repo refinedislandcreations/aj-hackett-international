@@ -450,6 +450,15 @@ a {
 .inset-0 {
   inset: 0px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.right-0 {
+  right: 0px;
+}
 .z-30 {
   z-index: 30;
 }
@@ -547,6 +556,9 @@ a {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .aspect-square {
   aspect-ratio: 1/1;
@@ -725,6 +737,10 @@ a {
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.py-15p {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
 .py-1p {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -758,6 +774,9 @@ a {
 .pb-10p {
   padding-bottom: 10%;
 }
+.pb-15p {
+  padding-bottom: 15%;
+}
 .pb-1p {
   padding-bottom: 1%;
 }
@@ -773,14 +792,8 @@ a {
 .pl-4 {
   padding-left: 1rem;
 }
-.pl-5 {
-  padding-left: 1.25rem;
-}
 .pl-5p {
   padding-left: 5%;
-}
-.pr-5 {
-  padding-right: 1.25rem;
 }
 .pr-5p {
   padding-right: 5%;
@@ -813,10 +826,6 @@ a {
 }
 .text-4xl {
   font-size: 2.25rem;
-  line-height: 1;
-}
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 .text-base {
@@ -1164,17 +1173,22 @@ footer {
   display: none; 
   position: fixed; 
   bottom: 20px; 
-  right: max(30px, calc(50vw - 738px));
+  right: max(55px, calc(50vw - 738px));
   z-index: 99; 
   border: none; 
   outline: none; 
   background-color:  #D2AE39; 
   color: #033357; 
   cursor: pointer; 
-  padding: 10px; 
-  border-radius: 10px; 
-  font-size: 10px; 
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  font-size: 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
+
 
 .myBtn:hover {
   color:#D2AE39;
@@ -1192,9 +1206,18 @@ footer {
   margin-top: 30%;
 }
 
+.timeline-margin {
+  margin-right: -20%;
+}
+
+
 @media (min-width:400px) {
   .header-margin{
     margin-top: 25%;
+  }
+
+  .timeline-margin {
+    margin-right: 0;
   }
   
 }
@@ -1277,8 +1300,14 @@ footer {
   .sm\:mt-30p {
     margin-top: 30%;
   }
+  .sm\:block {
+    display: block;
+  }
   .sm\:grid {
     display: grid;
+  }
+  .sm\:hidden {
+    display: none;
   }
   .sm\:min-h-40 {
     min-height: 40vh;
@@ -1297,6 +1326,10 @@ footer {
   }
   .sm\:rounded-3xl {
     border-radius: 1.5rem;
+  }
+  .sm\:py-10p {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   .sm\:py-1p {
     padding-top: 1%;
@@ -1317,6 +1350,12 @@ footer {
   }
   .sm\:pb-5p {
     padding-bottom: 5%;
+  }
+  .sm\:pl-5p {
+    padding-left: 5%;
+  }
+  .sm\:pr-5p {
+    padding-right: 5%;
   }
   .sm\:pt-0 {
     padding-top: 0px;
@@ -1358,6 +1397,9 @@ footer {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .md\:pt-10p {
+    padding-top: 10%;
+  }
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1367,6 +1409,9 @@ footer {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:pb-10p {
+    padding-bottom: 10%;
   }
   .lg\:pt-0 {
     padding-top: 0px;

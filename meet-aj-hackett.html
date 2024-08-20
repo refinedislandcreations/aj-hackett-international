@@ -27,85 +27,97 @@ image-1: /images/aj-hackett-bungy-eiffel-tower-paris-france.png
 image-1-position:
 image-1-alt:
 image-2: /images/tandem-bungy-jump-aj-hackett-international.png
-image-2-position:
+image-2-position: 60% 50%
 image-2-alt:
 image-3: /images/adventure-tourism-aj-hackett-international.png
 image-3-position:
 image-3-alt:
 quote-image: /images/aj-hackett-bungy-aj-hackett-international.png
+quote-image-position: 50% 50%
 ---
 
 <!-----Intro Section and Text-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+    <div class="px-5p pt-15p sm:pt-10p pb-10p sm:pb-0">
+        <div class="pb-10p">
+            <p class="title-font text-2xl sm:text-4xl"> AJ Hackett is the kiwi innovator who built a business empire on adrenaline and adventure. </p>
+        </div>
 
-    <div class="pb-10p">
-        <p class="title-font text-2xl sm:text-4xl"> AJ Hackett is the kiwi innovator who built a business empire on adrenaline and adventure. </p>
-    </div>
+        <div class="sm:grid sm:grid-cols-2 mb-5p">
+            <div class="sm:pr-5p pb-10p sm:pb-5p">
+                <p> From a day in 1987 when he launched himself into the world's eye by leaping off the Eiffel Tower with a rubber cord attached to his feet, AJ Hackett has gone on to become one of New Zealand's most visible and unique entrepreneurs.
+                </p>
+            </div>
+            <div class="relative h-full min-h-30 sm:min-h-50">
+                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
+            </div>
+        </div>
+        
+        <div class="sm:grid sm:grid-cols-2 mb-5p">
+            <div class="sm:hidden pt-5p pb-10p">
+                <p> The bungy jumping industry that he started has opened bold new avenues for tourism and has expanded the minds of millions of people worldwide. AJ’s personal life and business philosophies match his have-a-go ethos. Aptly, for a man who made his name encouraging others to jump off bridges, AJ is drawn to risk and has developed a knack for managing danger to create a safe and predictable environment for bungy jumpers.
+                </p>
+            </div>
+            <div class="relative h-full min-h-30 sm:min-h-50">
+                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-2 }}" style="object-position: {{ page.image-2-position }};" alt="{{ page.image-2-alt }}" />
+            </div>
+            <div class="hidden sm:block pl-5p">
+                <p> The bungy jumping industry that he started has opened bold new avenues for tourism and has expanded the minds of millions of people worldwide. AJ’s personal life and business philosophies match his have-a-go ethos. Aptly, for a man who made his name encouraging others to jump off bridges, AJ is drawn to risk and has developed a knack for managing danger to create a safe and predictable environment for bungy jumpers.
+                </p>
+            </div>
+        </div>
 
-    <div class="grid grid-cols-2 mb-5p">
-        <div class="pr-5p">
-            <p> From a day in 1987 when he launched himself into the world's eye by leaping off the Eiffel Tower with a rubber cord attached to his feet, AJ Hackett has gone on to become one of New Zealand's most visible and unique entrepreneurs.
-            </p>
-        </div>
-        <div class="relative h-full min-h-30 sm:min-h-50">
-            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
-        </div>
-    </div>
-    
-    <div class="grid grid-cols-2 mb-5p">
-        <div class="relative h-full min-h-30 sm:min-h-50">
-            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-2 }}" style="object-position: {{ page.image-2-position }};" alt="{{ page.image-2-alt }}" />
-        </div>
-        <div class="pl-5p">
-            <p> The bungy jumping industry that he started has opened bold new avenues for tourism and has expanded the minds of millions of people worldwide. AJ’s personal life and business philosophies match his have-a-go ethos. Aptly, for a man who made his name encouraging others to jump off bridges, AJ is drawn to risk and has developed a knack for managing danger to create a safe and predictable environment for bungy jumpers.
-            </p>
+        <div class="sm:grid sm:grid-cols-2 mb-5p">
+            <div class="sm:pr-5p pt-5p pb-10p">
+                <p> In the commercial world, he has always preferred to leap boldly rather than to hold back. This has led to some hard lessons. The same taste for adventure that excited AJ as a child still drives the man today as he looks for new challenges and as his business moves into a period of unique growth and change.
+                </p>
+            </div>
+            <div class="relative h-full min-h-30 sm:min-h-50">
+                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-3 }}" style="object-position: {{ page.image-3-position }};" alt="{{ page.image-3-alt }}" />
+            </div>
         </div>
     </div>
-
-    <div class="grid grid-cols-2 mb-5p">
-        <div class="pr-5p">
-            <p> In the commercial world, he has always preferred to leap boldly rather than to hold back. This has led to some hard lessons. The same taste for adventure that excited AJ as a child still drives the man today as he looks for new challenges and as his business moves into a period of unique growth and change.
-            </p>
-        </div>
-        <div class="relative h-full min-h-30 sm:min-h-50">
-            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-3 }}" style="object-position: {{ page.image-3-position }};" alt="{{ page.image-3-alt }}" />
-        </div>
-    </div>
-
 </section>
 
 
 <!-----BG and Text-------->
 
-<section class="mt-10p"> 
-    <div class="bg-cover bg-no-repeat relative" style="background-image: url('{{ page.quote-image }}'); height: 24rem;">
-        <div class="flex flex-col justify-center h-full p-5">
-            <p class="header-font text-6xl">Challenge life. <br> Challenge yourself.</p>
+<section class="max-w-screen-2xl mx-auto">
+    <div class="mt-10p">
+        <div class="bg-cover bg-no-repeat relative"
+            style="background-image: url('{{ page.quote-image }}'); height: 24rem; background-position: {{ page.quote-image-position }};">
+            <div class="flex flex-col justify-center h-full p-5">
+                <div class="bg-dark-blue p-5 absolute bottom-0 left-0 right-0 rounded-lg" style="margin-left: -32px; width: 64%;">
+                    <p class="header-font text-2xl sm:text-6xl">Challenge life. <br> Challenge yourself.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 
+
+
 <!-----Meet AJ Hackett with video-------->
-<section class="px-5p grid grid-cols-1 gap-y-5 py-10p">
+<section class="max-w-screen-2xl mx-auto">
+    <div class="px-5p grid grid-cols-1 gap-y-5 pt-15p md:pt-10p pb-15p lg:pb-10p">
+        <div class="col-span-full pb-5p">
+            <p class="title-font text-2xl sm:text-4xl"> Meet AJ Hackett </p>
+        </div>
 
-    <div class="col-span-full pb-5p">
-        <p class="title-font text-2xl sm:text-4xl"> Meet AJ Hackett </p>
+        <div style="padding:56.25% 0 0 0;position:relative;" class="pb-2p">
+            <iframe src="https://player.vimeo.com/video/466037759?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AJ Interview"></iframe>
+        </div>
+        
+        <div style="padding:56.25% 0 0 0;position:relative;" class="pb-2p">
+            <iframe src="https://player.vimeo.com/video/466047207?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Who is Bungy for"></iframe>
+        </div>
+        
+        <div style="padding:56.25% 0 0 0;position:relative;" class="pb-2p">
+            <iframe src="https://player.vimeo.com/video/465223636?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bungy highlights"></iframe>
+        </div>
     </div>
-
-    <div style="padding:56.25% 0 0 0;position:relative;" class="pb-2p">
-        <iframe src="https://player.vimeo.com/video/466037759?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AJ Interview"></iframe>
-    </div>
-    
-    <div style="padding:56.25% 0 0 0;position:relative;" class="pb-2p">
-        <iframe src="https://player.vimeo.com/video/466047207?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Who is Bungy for"></iframe>
-    </div>
-    
-    <div style="padding:56.25% 0 0 0;position:relative;" class="pb-2p">
-        <iframe src="https://player.vimeo.com/video/465223636?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bungy highlights"></iframe>
-    </div>
-
 </section>
 
 

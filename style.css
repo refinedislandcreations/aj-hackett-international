@@ -314,17 +314,22 @@ footer {
   display: none; 
   position: fixed; 
   bottom: 20px; 
-  right: max(30px, calc(50vw - 738px));
+  right: max(55px, calc(50vw - 738px));
   z-index: 99; 
   border: none; 
   outline: none; 
   background-color:  #D2AE39; 
   color: #033357; 
   cursor: pointer; 
-  padding: 10px; 
-  border-radius: 10px; 
-  font-size: 10px; 
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  font-size: 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
+
 
 .myBtn:hover {
   color:#D2AE39;
@@ -342,9 +347,18 @@ footer {
   margin-top: 30%;
 }
 
+.timeline-margin {
+  margin-right: -20%;
+}
+
+
 @media (min-width:400px) {
   .header-margin{
     margin-top: 25%;
+  }
+
+  .timeline-margin {
+    margin-right: 0;
   }
   
 }

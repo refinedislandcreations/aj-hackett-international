@@ -111,40 +111,23 @@ timeline:
 ---
 
 
-<section class="px-5p grid grid-cols-12 py-10p gap-5"> 
-
+<section class="max-w-screen-2xl mx-auto"> 
+  <div class="px-5p grid grid-cols-12 py-15p sm:py-10p gap-5">
     <div class="col-span-full pb-5p">
         <p class="title-font text-2xl sm:text-4xl">The Timeline of AJ Hackett International</p>
     </div>
-
     <div class="col-span-full">
         <p class="pb-2p">AJ Hackett International has pioneered adventure tourism for over 35 years led by AJ Hackett, however, it all started in January 1980 with a <strong>PELORUS BRIDGE TEST JUMP</strong>. Chris Sigglekow had heard about the Oxford University students who'd pulled off a similar stunt in Bristol, England. With a borrowed parachute harness and a bit of cord cut to a random length, Chris flung himself off the Pelorus Bridge. His jump didn't quite work out—he went straight into the water feet first and pretty much at full speed before the cord took his weight! In November 1986, AJ Hackett took his first jump at the <strong>GREENHITHE BRIDGE</strong>, a 19-meter drop over Auckland's Waitemata Harbour. Following this, on 26 June 1987, AJ successfully introduced the world to bungy jumping with a jump off the <strong>EIFFEL TOWER</strong>. In 1988, things got serious with the opening of the AJ Hackett Bungy site in Ohakune, New Zealand as the world's first commercial bungy site, and then on 12 November 1988, the opening of the world's first year-round commercial public bungy site at the Kawarau Bridge in Queenstown, New Zealand.</p>
         <p class="pb-2p">Other key milestones have included:</p>
     </div>
-
-
-
-
-
-
-   
-
-
     {% for item in page.timeline %}
-        <div class="col-span-3 border-r pr-5"> 
+        <div class="col-span-3 border-r pr-5p timeline-margin"> 
             <p class="title-font text-2xl sm:text-4xl pt-5">{{ item.year }}</p>
         </div>
-        <div class="col-span-9 pl-5"> 
+        <div class="col-span-9 sm:pl-5p"> 
             <p class="title-font text-2xl pb-5 pt-5">{{ item.heading }}</p>
             <p class="pb-2p">{{ item.info }}</p>
         </div>
     {% endfor %}
-
-
-
-
-    
- 
-
-
+  </div>
 </section>

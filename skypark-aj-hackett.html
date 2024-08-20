@@ -22,7 +22,7 @@ seo:
   hide-from-google: true
 header:
  - image: /images/skypark-aj-hackett-international-banner-image.jpg
-   position: 
+   position: 20% 50%
    label: 
    title: Skypark
    text: Experience Unforgettable Thrills
@@ -77,33 +77,35 @@ site:
    description: Enjoy the thrill of the Souleuvre Valley in Normandie with Skypark Normandie by AJ Hackett! The first jumps took place in November 1990, after six months of hard work, and the Souleuvre Viaduct now gives adrenaline-seekers in Normandie the chance to get their thrills! In particular, with the opening of the giant zip line in 1999, the Glass Skycube offering a panoramic view of the entire Souleuvre Valley in 2022, and the new feature in 2024—the pendulum jump called Skyrope. Since then, the company's primary objective has been to protect the Souleuvre Valley (over 1,000 hectares) by giving it protected status while making it a major European tourist destination for everyone, from thrill-seekers to nature lovers.
 ---
 
-<section class="px-5p pt-10p">
-
-    <div class="pb-10p">
-        <p class="pb-2p"> 2020 shaped up to be a year unlike any other. On top of managing a global pandemic, <strong> we celebrated our 30th birthday in both Cairns and Normandie and launched our new brand identity—Skypark by AJ Hackett</strong>.</p>
-        <p class="pb-2p"> Skypark celebrates everything that AJ Hackett is famous for: <strong> creating positively life-changing experiences through our range of gravity-defying activities while creating a destination of all-inclusive fun activities you will want to keep coming back for</strong>.</p>
-        <p> Check out each individual site to experience the many worlds of Skypark by AJ Hackett.</p>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-15p sm:pt-10p xl:pt-5p pb-10p sm:pb-0">
+    <div>
+        <p class="pb-5p xl:pb-2p"> 2020 shaped up to be a year unlike any other. On top of managing a global pandemic, <strong> we celebrated our 30th birthday in both Cairns and Normandie and launched our new brand identity—Skypark by AJ Hackett</strong>.</p>
+        <p class="pb-5p xl:pb-2p"> Skypark celebrates everything that AJ Hackett is famous for: <strong> creating positively life-changing experiences through our range of gravity-defying activities while creating a destination of all-inclusive fun activities you will want to keep coming back for</strong>.</p>
+        <p class="pb-5p sm:pb-10p xl:pb-5p"> Check out each individual site to experience the many worlds of Skypark by AJ Hackett.</p>
     </div>
-
+  </div>
 </section>
 
-<section class="px-5p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pb-10p">
     {% for item in page.site %}
-        <h3 class="title-font text-2xl sm:text-4xl pb-1p"> {{ item.location }} </h3>
+        <h3 class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p"> {{ item.location }} </h3>
         <hr class="pb-1p">
-        <div class="relative h-full min-h-30 sm:min-h-50">
+        <div class="relative h-full min-h-30 sm:min-h-50 mt-2p 2xl:mt-1p">
             <a href="{{ item.url }}">
                 <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
             </a>
         </div>
-        <h4 class="uppercase text-2xl py-1p">
+        <h4 class="uppercase text-xl sm:text-2xl py-5p xl:py-2p">
             {% for experience in item.experiences %}
                 {{ experience }}{% if forloop.last == false %} | {% endif %}
             {% endfor %}
         </h4>
-        <p class="pb-2p">{{ item.description }}</p>
-        <div class="mb-10p">
+        <p class="pb-10p sm:pb-2p 2xl:pb-1p">{{ item.description }}</p>
+        <div class="mb-20p md:mb-15p sm:mt-5p xl:mt-2p xl:mb-10p">
             <a href="{{ item.url }}" class="button" aria-label="{{ item.url-alt }}">Visit the site</a>
         </div>
     {% endfor %}
+  </div>
 </section>

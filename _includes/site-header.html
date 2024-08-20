@@ -60,7 +60,9 @@
 
 <section class="header-margin max-width mx-auto"> 
     {% for item in page.header %}
-    <div class="bg-cover bg-center bg-no-repeat rounded-3xl relative mx-5p h-[34rem] xl:h-[45rem]" style="background-image: url('{{ item.image }}');">
+    <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p h-[34rem] xl:h-[45rem]" 
+     style="background-image: url('{{ item.image }}'); background-position: {{ item.position }};"
+     alt="{{ item.label | default: item.title }}">
         <div class="flex flex-col justify-end h-full p-5">
             <div class="bg-dark-blue p-5 relative header-box">
                 <div style="margin-right: 10%;">

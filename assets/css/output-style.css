@@ -521,6 +521,9 @@ a {
 .mb-20p {
   margin-bottom: 20%;
 }
+.mb-2p {
+  margin-bottom: 2%;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -604,9 +607,6 @@ a {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1287,11 +1287,17 @@ footer {
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
+  .sm\:mb-10p {
+    margin-bottom: 10%;
+  }
   .sm\:mb-5p {
     margin-bottom: 5%;
   }
   .sm\:mt-10p {
     margin-top: 10%;
+  }
+  .sm\:mt-2p {
+    margin-top: 2%;
   }
   .sm\:mt-30p {
     margin-top: 30%;
@@ -1400,6 +1406,9 @@ footer {
   .md\:mb-15p {
     margin-bottom: 15%;
   }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
   .md\:mt-5p {
     margin-top: 5%;
   }
@@ -1435,6 +1444,9 @@ footer {
   .xl\:mb-10p {
     margin-bottom: 10%;
   }
+  .xl\:mb-5p {
+    margin-bottom: 5%;
+  }
   .xl\:mt-0 {
     margin-top: 0px;
   }
@@ -1460,9 +1472,6 @@ footer {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mb-1p {
-    margin-bottom: 1%;
-  }
   .\32xl\:mt-1p {
     margin-top: 1%;
   }

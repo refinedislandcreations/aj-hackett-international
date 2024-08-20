@@ -123,180 +123,185 @@ safety:
 
 <!-----Meet AJ-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-15p sm:pt-10p pb-10p sm:pb-0">
+    <div class="pb-5p">
+        <p class="title-font text-2xl sm:text-4xl"> A warm welcome by AJ Hackett </p>
+    </div>
 
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> A warm welcome by AJ Hackett </p>
-  </div>
-
-  <div class="grid grid-cols-2 mb-5p">
-      <div class="pr-5p">
-          <p class="mb-5p"> Welcome to the World of Adventure with AJ Hackett! Dive into the story of the man who turned adrenaline into an empire. Discover more about AJ's journey and vision
-          </p>
-          <div>
-            <a href="/meet-aj-hackett.html" class="button" aria-label="">Find out more</a>
+    <div class="sm:grid sm:grid-cols-2 mb-5p">
+        <div class="pr-5p">
+            <p class="mb-10p sm:mb-5p"> Welcome to the World of Adventure with AJ Hackett! Dive into the story of the man who turned adrenaline into an empire. Discover more about AJ's journey and vision
+            </p>
+            <div class="mb-15p sm:mb-0 sm:mt-10p">
+              <a href="/meet-aj-hackett.html" class="button" aria-label="">Find out more</a>
+          </div>
         </div>
-      </div>
-      <div class="relative h-full min-h-30 sm:min-h-50">
-          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
-      </div>
+        <div class="relative h-full min-h-30 sm:min-h-50">
+            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
+        </div>
+    </div>
   </div>
-  
 </section>
 
 
 <!-----Skypark-------->
 
-<section class="px-5p pt-10p pb-5p">
-
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Skypark by AJ Hackett </p>
-  </div>
-
-  <p class="pb-5p">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
-
-  <div class="pb-5p">
-    <div class="overflow-x-auto">
-      <h4 class="uppercase text-2xl py-2p sm:py-1p whitespace-nowrap">
-        {% for item in page.experiences %}
-          <a href="{{ item.url }}" alt="{{ item.url-alt }}" class="inline-block mx-4">{{ item.name }}</a>
-          {% if forloop.last == false %} | {% endif %}
-        {% endfor %}
-      </h4>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p pb-5p xl:pt-5p">
+    <div class="pb-5p">
+        <p class="title-font text-2xl sm:text-4xl"> Skypark by AJ Hackett </p>
     </div>
-  </div>
-  
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5p">
-      {% for item in page.site %}
-        <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col">
-          <div class="relative w-full h-48">
-            <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
-                <img class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
-            </a>
-        </div>
-        <h3 class="title-font text-3xl py-3">{{ item.location }}</h3>
-        <div class="mt-4">
-            <a href="{{ item.url }}" class="button">Find out more</a>
-        </div>
-        </div>
-        {% endfor %}
+    <p class="pb-10p sm:pb-5p">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
+
+    <div class="pb-10p sm:pb-5p">
+      <div class="overflow-x-auto">
+        <h4 class="uppercase text-2xl py-5p sm:py-2p whitespace-nowrap">
+          {% for item in page.experiences %}
+            <a href="{{ item.url }}" alt="{{ item.url-alt }}" class="inline-block mx-4">{{ item.name }}</a>
+            {% if forloop.last == false %} | {% endif %}
+          {% endfor %}
+        </h4>
+      </div>
     </div>
+    
+
+    <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-5p">
+        {% for item in page.site %}
+          <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col mb-10p sm:mb-0">
+            <div class="relative w-full h-48">
+              <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
+                  <img class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+              </a>
+          </div>
+          <h3 class="title-font text-3xl py-3">{{ item.location }}</h3>
+          <div class="mt-4">
+              <a href="{{ item.url }}" class="button">Find out more</a>
+          </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>  
 </section>
 
 
 
 <!-----Pondok Santi-------->
 
-<section class="px-5p pt-10p">
-
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Pondok Santi Estate, Gili Trawangan </p>
-  </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">Discover Pondok Santi Estate, a luxurious retreat nestled in the tranquil landscapes of Indonesia. Immerse yourself in serene beauty and exceptional comfort at our boutique resort, where every moment is designed to rejuvenate and inspire.</p>
-      <div>
-        <a href="/pondok-santi-estate.html" class="button" aria-label="">Find out more</a>
-    </div>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p sm:mt-30p md:mt-5p xl:mt-0">
+    <div class="pb-5p">
+      <p class="title-font text-2xl sm:text-4xl">Pondok Santi Estate, Gili Trawangan</p>
     </div>
 
-    <!-- Image 1 -->
-    {% for item in page.pondok %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
+    <div class="flex flex-col sm:grid sm:grid-cols-2 gap-5 mb-5p">
+      <!-- Image 1 -->
+      {% for item in page.pondok %}
+      <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
         <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p order-2 sm:order-none">
+        <p class="pb-10p sm:pb-5p">Discover Pondok Santi Estate, a luxurious retreat nestled in the tranquil landscapes of Indonesia. Immerse yourself in serene beauty and exceptional comfort at our boutique resort, where every moment is designed to rejuvenate and inspire.</p>
+        <div class="mb-15p sm:mb-0 sm:mt-10p md:mt-5p">
+          <a href="/pondok-santi-estate.html" class="button" aria-label="">Find out more</a>
+        </div>
+      </div>
     </div>
-    {% endfor %}
-</div>
+  </div>
 </section>
+
 
 
 
 
 <!-----Projects-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+        <p class="title-font text-2xl sm:text-4xl"> Explore Our Ongoing Projects and Upgrades </p>
+    </div>
 
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Explore Our Ongoing Projects and Upgrades </p>
+    <div class="sm:grid sm:grid-cols-2 gap-5 mb-5p">
+
+      {% for item in page.projects %}
+      <div class="relative h-full min-h-30 sm:min-h-50">
+          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p">
+        <p class="pb-5p pt-5p sm:pt-0">Discover the exciting developments happening at AJ Hackett International as we continue to push the boundaries of adventure. Our ongoing projects are designed to elevate the Skypark experience with innovative upgrades and thrilling new features. Explore how we’re enhancing our sites around the globe, bringing new dimensions of excitement and comfort to our adventure parks.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/projects.html" class="button" aria-label="">Find out more</a>
+      </div>
+      </div>
+    </div>
   </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-
-    {% for item in page.projects %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    {% endfor %}
-
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">Discover the exciting developments happening at AJ Hackett International as we continue to push the boundaries of adventure. Our ongoing projects are designed to elevate the Skypark experience with innovative upgrades and thrilling new features. Explore how we’re enhancing our sites around the globe, bringing new dimensions of excitement and comfort to our adventure parks.</p>
-      <div>
-        <a href="/projects.html" class="button" aria-label="">Find out more</a>
-    </div>
-    </div>
-
-</div>
 </section>
 
 
 
 <!-----Sustainability-------->
 
-<section class="px-5p pt-10p">
-
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Our Commitment to a Greener Future </p>
-  </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">Discover how AJ Hackett International is making strides toward a greener future. Our commitment to sustainability drives us to create positive impacts for our people, customers, and the planet. Explore the innovative practices we’re implementing across our Skypark locations to ensure that adventure and conservation go hand in hand. Learn more about our efforts to achieve carbon neutrality and promote environmental stewardship through various initiatives at AJ Hackett International.</p>
-      <div>
-        <a href="/sustainability.html" class="button" aria-label="">Find out more</a>
-    </div>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+      <p class="title-font text-2xl sm:text-4xl">Our Commitment to a Greener Future</p>
     </div>
 
-    <!-- Image 1 -->
-    {% for item in page.sustainability %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
+    <div class="flex flex-col sm:grid sm:grid-cols-2 gap-5 mb-5p">
+      <!-- Image 1 -->
+      {% for item in page.sustainability %}
+      <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
         <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p order-2 sm:order-none">
+        <p class="pb-5p">Discover how AJ Hackett International is making strides toward a greener future. Our commitment to sustainability drives us to create positive impacts for our people, customers, and the planet. Explore the innovative practices we’re implementing across our Skypark locations to ensure that adventure and conservation go hand in hand. Learn more about our efforts to achieve carbon neutrality and promote environmental stewardship through various initiatives at AJ Hackett International.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/sustainability.html" class="button" aria-label="">Find out more</a>
+        </div>
+      </div>
     </div>
-    {% endfor %}
-</div>
+  </div>
 </section>
+
 
 
 
 <!-----Accessibility-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+        <p class="title-font text-2xl sm:text-4xl"> Embracing Accessibility for All </p>
+    </div>
 
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Embracing Accessibility for All </p>
+    <div class="sm:grid sm:grid-cols-2 gap-5 mb-5p">
+
+      {% for item in page.accessibility %}
+      <div class="relative h-full min-h-30 sm:min-h-50">
+          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p">
+        <p class="pb-5p pt-5p sm:pt-0">At AJ Hackett International, we believe that adventure should be accessible to everyone, regardless of physical or mental abilities. With a rich history of guiding visitors with special needs through our activities, we ensure that everyone can experience the thrill of pushing their limits. Whether it's someone bungy jumping in a wheelchair or a parent conquering their first jump, our expert teams are dedicated to helping individuals break barriers and build confidence. Discover how our inclusive approach to adventure empowers people of all abilities to challenge themselves and embrace new experiences.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/accessibility.html" class="button" aria-label="">Find out more</a>
+      </div>
+      </div>
+    </div>
   </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-
-    {% for item in page.accessibility %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    {% endfor %}
-
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">At AJ Hackett International, we believe that adventure should be accessible to everyone, regardless of physical or mental abilities. With a rich history of guiding visitors with special needs through our activities, we ensure that everyone can experience the thrill of pushing their limits. Whether it's someone bungy jumping in a wheelchair or a parent conquering their first jump, our expert teams are dedicated to helping individuals break barriers and build confidence. Discover how our inclusive approach to adventure empowers people of all abilities to challenge themselves and embrace new experiences.</p>
-      <div>
-        <a href="/accessibility.html" class="button" aria-label="">Find out more</a>
-    </div>
-    </div>
-
-</div>
 </section>
 
 
@@ -304,28 +309,29 @@ safety:
 
 <!-----Reconciliation-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+      <p class="title-font text-2xl sm:text-4xl">Acknowledging the Past, Shaping the Future</p>
+    </div>
 
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Acknowledging the Past, Shaping the Future </p>
+    <div class="flex flex-col sm:grid sm:grid-cols-2 gap-5 mb-5p">
+      <!-- Image 1 -->
+      {% for item in page.reconciliation %}
+      <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
+        <img class="absolute inset-0 w-full h-full object-contain rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p order-2 sm:order-none">
+        <p class="pb-5p">In 2024, AJ Hackett International proudly received endorsement from Reconciliation Australia for our 'Reflect RAP'—a Reconciliation Action Plan that sets the groundwork for meaningful reconciliation initiatives across our business. We honor the Traditional Custodians by recognizing their deep connection to the land and their invaluable knowledge passed down through generations. Our partnership with the Djapugay community at Skypark Cairns serves as a guiding example for our global sites, reinforcing our commitment to sustainability and the protection of our natural environment. Explore how we are shaping a future rooted in respect and reconciliation.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/reconciliation.html" class="button" aria-label="">Find out more</a>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">In 2024, AJ Hackett International proudly received endorsement from Reconciliation Australia for our 'Reflect RAP'—a Reconciliation Action Plan that sets the groundwork for meaningful reconciliation initiatives across our business. We honor the Traditional Custodians by recognizing their deep connection to the land and their invaluable knowledge passed down through generations. Our partnership with the Djapugay community at Skypark Cairns serves as a guiding example for our global sites, reinforcing our commitment to sustainability and the protection of our natural environment. Explore how we are shaping a future rooted in respect and reconciliation.</p>
-      <div>
-        <a href="/reconciliation.html" class="button" aria-label="">Find out more</a>
-    </div>
-    </div>
-
-    <!-- Image 1 -->
-    {% for item in page.reconciliation %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
-        <img class="absolute inset-0 w-full h-full object-contain" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    {% endfor %}
-</div>
 </section>
 
 
@@ -333,29 +339,29 @@ safety:
 
 <!-----Community-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+        <p class="title-font text-2xl sm:text-4xl"> Rooted in Community: Engaging and Giving Back </p>
+    </div>
 
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Rooted in Community: Engaging and Giving Back </p>
+    <div class="sm:grid sm:grid-cols-2 gap-5 mb-5p">
+
+      {% for item in page.community %}
+      <div class="relative h-full min-h-30 sm:min-h-50">
+          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p">
+        <p class="pb-5p pt-5p sm:pt-0">At AJ Hackett International, we believe that our connection to the community is as important as the adventures we create. Our community initiatives are designed to foster deep ties with the people and places that support us, ensuring that we give back in meaningful ways. From charity events like Jump for Hope to sustainable projects at Pondok Santi Estate, we are committed to making a positive impact. Learn how we engage with and contribute to the communities that inspire us and help shape our journey.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/community.html" class="button" aria-label="">Find out more</a>
+      </div>
+      </div>
+    </div>
   </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-
-    {% for item in page.community %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    {% endfor %}
-
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">At AJ Hackett International, we believe that our connection to the community is as important as the adventures we create. Our community initiatives are designed to foster deep ties with the people and places that support us, ensuring that we give back in meaningful ways. From charity events like Jump for Hope to sustainable projects at Pondok Santi Estate, we are committed to making a positive impact. Learn how we engage with and contribute to the communities that inspire us and help shape our journey.</p>
-      <div>
-        <a href="/community.html" class="button" aria-label="">Find out more</a>
-    </div>
-    </div>
-
-</div>
 </section>
 
 
@@ -363,28 +369,29 @@ safety:
 
 <!-----Meet the team-------->
 
-<section class="px-5p pt-10p">
-
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> The Faces Driving Our Global Adventure </p>
-  </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">At AJ Hackett International, our success is powered by the passion, expertise, and dedication of our extraordinary team. Each member brings a unique blend of skills and experiences that fuel our mission to push the boundaries of adventure tourism. From AJ Hackett, the trailblazing founder of bungy jumping, to our dynamic leaders and specialists, our team is the heart of our global operation. Together, they ensure every Skypark experience is exceptional, while continually shaping the future of adventure tourism. Get to know the visionaries who make our extraordinary adventures possible and learn how they’re making a difference around the world.</p>
-      <div>
-        <a href="/meet-the-team.html" class="button" aria-label="">Find out more</a>
-    </div>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+      <p class="title-font text-2xl sm:text-4xl">The Faces Driving Our Global Adventure</p>
     </div>
 
-    <!-- Image 1 -->
-    {% for item in page.team %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
+    <div class="flex flex-col sm:grid sm:grid-cols-2 gap-5 mb-5p">
+      <!-- Image 1 -->
+      {% for item in page.team %}
+      <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
         <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p order-2 sm:order-none">
+        <p class="pb-5p">At AJ Hackett International, our success is powered by the passion, expertise, and dedication of our extraordinary team. Each member brings a unique blend of skills and experiences that fuel our mission to push the boundaries of adventure tourism. From AJ Hackett, the trailblazing founder of bungy jumping, to our dynamic leaders and specialists, our team is the heart of our global operation. Together, they ensure every Skypark experience is exceptional, while continually shaping the future of adventure tourism. Get to know the visionaries who make our extraordinary adventures possible and learn how they’re making a difference around the world.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/meet-the-team.html" class="button" aria-label="">Find out more</a>
+        </div>
+      </div>
     </div>
-    {% endfor %}
-</div>
+  </div>
 </section>
 
 
@@ -393,55 +400,56 @@ safety:
 
 <!-----Purpose, Promise & Values-------->
 
-<section class="px-5p pt-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-10p xl:pt-5p">
+    <div class="pb-5p">
+        <p class="title-font text-2xl sm:text-4xl"> Our Purpose, Promise & Values </p>
+    </div>
 
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Our Purpose, Promise & Values </p>
+    <div class="sm:grid sm:grid-cols-2 gap-5 mb-5p">
+
+      {% for item in page.purpose %}
+      <div class="relative h-full min-h-30 sm:min-h-50">
+          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p">
+        <p class="pb-5p pt-5p sm:pt-0">Discover the driving force behind AJ Hackett International. Our purpose is to inspire and empower through extraordinary adventures, while our promise focuses on sustainability and innovation. Our core values of respect, adventure, innovation, safety, and experience guide everything we do. Explore more about how these principles shape our mission and define our approach to adventure tourism. </p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/purpose-promise-values.html" class="button" aria-label="">Find out more</a>
+      </div>
+      </div>
+    </div>
   </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-
-    {% for item in page.purpose %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    {% endfor %}
-
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">Discover the driving force behind AJ Hackett International. Our purpose is to inspire and empower through extraordinary adventures, while our promise focuses on sustainability and innovation. Our core values of respect, adventure, innovation, safety, and experience guide everything we do. Explore more about how these principles shape our mission and define our approach to adventure tourism. </p>
-      <div>
-        <a href="/purpose-promise-values.html" class="button" aria-label="">Find out more</a>
-    </div>
-    </div>
-
-</div>
 </section>
 
 
 
 <!-----Safety Management-------->
 
-<section class="px-5p pt-10p">
-
-  <div class="pb-5p">
-      <p class="title-font text-4xl"> Safeguarding Every Adventure Through Rigorous Practices </p>
-  </div>
-
-  <div class="grid grid-cols-2 gap-5 mb-5p">
-    <!-- Text Content -->
-    <div class="col-span-1 pr-5p">
-      <p class="pb-5p">At AJ Hackett International, safety is our top priority. We are dedicated to maintaining the highest standards in health, safety, and welfare across all our adventure activities. From rigorous training and site-specific protocols to state-of-the-art equipment and regular inspections, we ensure that every experience is both thrilling and secure. Learn more about our comprehensive safety practices and how we safeguard every adventure.</p>
-      <div>
-        <a href="/safety-management.html" class="button" aria-label="">Find out more</a>
-    </div>
+<section class="max-w-screen-2xl mx-auto">
+  <div class=" px-5p pt-10p pb-10p xl:pt-5p">
+    <div class="pb-5p">
+      <p class="title-font text-2xl sm:text-4xl">Safeguarding Every Adventure Through Rigorous Practices</p>
     </div>
 
-    <!-- Image 1 -->
-    {% for item in page.safety %}
-    <div class="relative h-full min-h-30 sm:min-h-50">
+    <div class="flex flex-col sm:grid sm:grid-cols-2 gap-5 mb-5p">
+      <!-- Image 1 -->
+      {% for item in page.safety %}
+      <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
         <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+      </div>
+      {% endfor %}
+
+      <!-- Text Content -->
+      <div class="col-span-1 pr-5p order-2 sm:order-none">
+        <p class="pb-5p">At AJ Hackett International, safety is our top priority. We are dedicated to maintaining the highest standards in health, safety, and welfare across all our adventure activities. From rigorous training and site-specific protocols to state-of-the-art equipment and regular inspections, we ensure that every experience is both thrilling and secure. Learn more about our comprehensive safety practices and how we safeguard every adventure.</p>
+        <div class="mb-15p sm:mb-0 mt-5p sm:mt-10p md:mt-5p">
+          <a href="/safety-management.html" class="button" aria-label="">Find out more</a>
+        </div>
+      </div>
     </div>
-    {% endfor %}
-</div>
+  </div>
 </section>

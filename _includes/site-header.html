@@ -1,20 +1,21 @@
-<section class="max-w-screen-2xl mx-auto">
-    <div class="top-0 left-0 right-0 sm:flex justify-between items-center px-2 pt-2 fixed w-full z-50">
-        <a href="/index.html" aria-label="Go to homepage" class="z-30">
-            <img src="/images/logo-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="w-48">
-        </a>
-        
-        <div class="text-right">
-            <div class="hamburger-wrapper">
-                <div class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+<section class="header-container fixed w-full z-50">
+    <div class="header-content max-w-screen-2xl mx-auto flex justify-between items-center px-5 py-2">
+      <a href="/index.html" aria-label="Go to homepage" class="z-30">
+        <img src="/images/logo-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="w-48">
+      </a>
+      
+      <div class="text-right">
+        <div class="hamburger-wrapper">
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
+  
 
 <div class="mobile-menu">
     <div class="mobile-menu-content">
@@ -57,14 +58,14 @@
 
 
 
-<section class="mt-30p sm:mt-10p"> 
+<section class="header-margin max-width mx-auto"> 
     {% for item in page.header %}
-    <div class="bg-cover bg-center bg-no-repeat rounded-3xl relative mx-5p" style="background-image: url('{{ item.image }}'); height: 34rem;">
+    <div class="bg-cover bg-center bg-no-repeat rounded-3xl relative mx-5p h-[34rem] xl:h-[45rem]" style="background-image: url('{{ item.image }}');">
         <div class="flex flex-col justify-end h-full p-5">
             <div class="bg-dark-blue p-5 relative header-box">
                 <div style="margin-right: 10%;">
-                    <h1 class="header-font text-2xl sm:text-6xl">{{ item.title }}</h1>
-                    <p class="text-lg sm:text-xl uppercase">{{ item.text }}</p>
+                    <h1 class="header-font text-2xl sm:text-4xl md:text-5xl lg:text-6xl pb-2p">{{ item.title }}</h1>
+                    <p class="text-lg sm:text-xl">{{ item.text }}</p>
                 </div>
             </div>
         </div>

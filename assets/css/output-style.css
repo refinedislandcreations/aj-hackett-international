@@ -1435,6 +1435,13 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-5p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .lg\:mb-5p {
+    margin-bottom: 5%;
+  }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

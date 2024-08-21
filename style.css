@@ -163,15 +163,6 @@ header {
 .g-bg-pos-l { background-position: left; }
 .g-bg-pos-r { background-position: right; }
 
-
-.hamburger-wrapper {
-  cursor: pointer;
-  display: inline-block;
-  top: 1rem; /* Adjust as needed */
-  right: 1rem; /* Adjust as needed */
-  z-index: 1000;
-}
-
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -328,6 +319,34 @@ footer {
   margin-right: -20%;
 }
 
+.header-logo-position {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hamburger-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 38%;
+  right: 19%;
+  z-index: 1000;
+}
+
+@media (min-width:350px) {
+
+  .header-logo-position {
+    padding-top: 7%;
+  }
+
+  .hamburger-wrapper {
+    top: 43%;
+  }
+  
+}
+
 
 @media (min-width:400px) {
   .header-margin{
@@ -337,13 +356,30 @@ footer {
   .timeline-margin {
     margin-right: 0;
   }
+
+  .header-logo-position {
+    padding-top: 5%;
+  }
+
+  .hamburger-wrapper {
+    top: 41%;
+  }
+  
+}
+
+
+@media (min-width:450px) {
+
+  .header-logo-position {
+    padding-top: 6%;
+  }
   
 }
 
 
 @media (min-width:500px) {
   .header-margin{
-    margin-top: 20%;
+    margin-top: 23%;
   }
   
 }

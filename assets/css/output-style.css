@@ -578,11 +578,20 @@ a {
 .h-lvh {
   height: 100lvh;
 }
+.h-1 {
+  height: 0.25rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
 .min-h-30 {
   min-height: 30vh;
 }
 .min-h-40 {
   min-height: 40vh;
+}
+.w-36 {
+  width: 9rem;
 }
 .w-48 {
   width: 12rem;
@@ -590,11 +599,17 @@ a {
 .w-full {
   width: 100%;
 }
+.w-8 {
+  width: 2rem;
+}
 .max-w-screen-2xl {
   max-width: 1536px;
 }
 .grow {
   flex-grow: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .list-disc {
   list-style-type: disc;
@@ -738,10 +753,6 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-2p {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -753,6 +764,10 @@ a {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -1011,15 +1026,6 @@ header {
 .g-bg-pos-l { background-position: left; }
 .g-bg-pos-r { background-position: right; }
 
-
-.hamburger-wrapper {
-  cursor: pointer;
-  display: inline-block;
-  top: 1rem; /* Adjust as needed */
-  right: 1rem; /* Adjust as needed */
-  z-index: 1000;
-}
-
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -1176,6 +1182,34 @@ footer {
   margin-right: -20%;
 }
 
+.header-logo-position {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hamburger-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 38%;
+  right: 19%;
+  z-index: 1000;
+}
+
+@media (min-width:350px) {
+
+  .header-logo-position {
+    padding-top: 7%;
+  }
+
+  .hamburger-wrapper {
+    top: 43%;
+  }
+  
+}
+
 
 @media (min-width:400px) {
   .header-margin{
@@ -1185,13 +1219,30 @@ footer {
   .timeline-margin {
     margin-right: 0;
   }
+
+  .header-logo-position {
+    padding-top: 5%;
+  }
+
+  .hamburger-wrapper {
+    top: 41%;
+  }
+  
+}
+
+
+@media (min-width:450px) {
+
+  .header-logo-position {
+    padding-top: 6%;
+  }
   
 }
 
 
 @media (min-width:500px) {
   .header-margin{
-    margin-top: 20%;
+    margin-top: 23%;
   }
   
 }
@@ -1301,6 +1352,9 @@ footer {
   }
   .sm\:min-h-50 {
     min-height: 50vh;
+  }
+  .sm\:w-48 {
+    width: 12rem;
   }
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));

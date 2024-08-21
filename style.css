@@ -35,14 +35,6 @@ body {
   }
 }
 
-/* Header container to respect max-width */
-.header-container {
-  max-width: 1600px; 
-  margin: 0 auto; 
-  padding: 0 20px; 
-  position: relative; 
-}
-
 /* Fixed header styles */
 header {
   width: 100% !important; /* Full width for the header */
@@ -51,30 +43,16 @@ header {
   z-index: 50;
 }
 
-.fixed {
-  width: 100% !important; /* Ensure full width */
-  position: fixed !important;
-  top: 0 !important;
-  z-index: 50 !important;
-  background: #FFFDFF !important; /* Background color */
-}
-
-/* Additional styling to ensure header content is centered */
-.header-content {
-  max-width: 1600px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .mobile-menu {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 50;
     background:  #FFFDFF; 
+}
+
+.header-bg {
+  background-color: #FFFDFF; 
 }
 
 .header-font {
@@ -189,7 +167,6 @@ header {
 .hamburger-wrapper {
   cursor: pointer;
   display: inline-block;
-  position: fixed;
   top: 1rem; /* Adjust as needed */
   right: 1rem; /* Adjust as needed */
   z-index: 1000;
@@ -228,7 +205,7 @@ header {
 }
 
 .mobile-menu.active {
-  right: 45px; 
+  right: -24px; 
 }
 
 .mobile-menu-content {

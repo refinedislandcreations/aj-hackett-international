@@ -20,17 +20,17 @@ seo:
 header:
  - image: /images/purpose-promise-values-aj-hackett-international.png
    position: 50% 50%
-   label: 
+   label: Man preparing to bungy jump off Macau Skypark tower, embodying adventure and excitement.
    title: Our Purpose, Promise & Values
    text: The Foundations of Our Adventure Philosophy
 purpose-image: /images/our-purpose-aj-hackett-international.png
-purpose-image-position:
-purpose-image-alt:   
+purpose-image-position: 50% 50%
+purpose-image-alt: Five people enjoying their time, with a bungy tower visible above them. 
 promise-image: /images/our-promise-aj-hackett-international.png
-promise-image-position:
-promise-image-alt:   
+promise-image-position: 50% 50%
+promise-image-alt: Skypark site showcasing our commitment to sustainability, adventure, and innovation in tourism.
 values-image: /images/our-values-aj-hackett-international.png
-values-image-position:
+values-image-position: 50% 50%
 values-image-alt:   
 ---
 
@@ -47,9 +47,9 @@ values-image-alt:
             </div>
             <div class="relative h-full min-h-30 sm:min-h-50">
                 <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" 
-                    src="{{ purpose-image }}" 
-                    style="object-position: {{ purpose-image-position }};" 
-                    alt="{{ purpose-image-alt }}" />
+                    src="{{ page.purpose-image }}" 
+                    style="object-position: {{ page.purpose-image-position }};" 
+                    alt="{{ page.purpose-image-alt }}" />
             </div>
         </div>
     </div>
@@ -69,9 +69,9 @@ values-image-alt:
             </div>
             <div class="relative h-full min-h-30 sm:min-h-50">
                 <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" 
-                    src="{{ promise-image }}" 
-                    style="object-position: {{ promise-image-position }};" 
-                    alt="{{ promise-image-alt }}" />
+                    src="{{ page.promise-image }}" 
+                    style="object-position: {{ page.promise-image-position }};" 
+                    alt="{{ page.promise-image-alt }}" />
             </div>
         </div>
     </div>
@@ -100,9 +100,9 @@ values-image-alt:
             </div>
             <div class="relative h-full min-h-30 sm:min-h-50">
                 <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" 
-                    src="{{ values-image }}" 
-                    style="object-position: {{ values-image-position }};" 
-                    alt="{{ values-image-alt }}" />
+                    src="{{ page.values-image }}" 
+                    style="object-position: {{ page.values-image-position }};" 
+                    alt="{{ page.values-image-alt }}" />
             </div>
         </div>
     </div>

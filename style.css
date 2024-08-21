@@ -107,7 +107,7 @@ header {
   padding-right: 1em;
 }
 
-.button-block:hover {
+.button:hover {
   border-color: #033357;
   background-color: inherit;
   color:#033357;

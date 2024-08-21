@@ -29,7 +29,8 @@ header:
    label: A family of three, a child, a man, and a woman, enjoying a fun activity together at Skypark by AJ Hackett.
    title: Experiences
    text: Explore Unforgettable Thrills and Sky-High Fun
-quote-image: /images/temp-img.jpg
+quote-image: /images/aj-getting-ready-for-a-bungy-jump-aj-hackett-international.png
+quote-position: 50% 23%
 experience:
  - name: Bungy
    id: "bungy"  
@@ -262,14 +263,20 @@ experience:
 <!-----BG and Text-------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="my-5p">
-    <div class="bg-cover bg-no-repeat relative" style="background-image: url('{{ page.quote-image }}'); height: 24rem;">
-        <div class="flex flex-col justify-center h-full p-5">
-            <p class="header-font text-4xl sm:text-6xl">Challenge life. <br> Challenge yourself.</p>
+  <div class="relative mt-10p">
+    <div class="bg-cover bg-no-repeat"
+        style="background-image: url('{{ page.quote-image }}'); height: 24rem; background-position: {{ page.quote-position }};">
+      <div class="absolute inset-0 flex items-center justify-center p-5p">
+        <div class="bg-dark-blue p-8 rounded-lg text-center opacity-90">
+          <p class="header-font text-xl sm:text-3xl lg:text-4xl text-white">
+            “I discovered from my very first jump that we were on to something incredibly special,” <br> AJ explains.
+          </p>
         </div>
+      </div>
     </div>
-  </div> 
+  </div>
 </section>
+
 
 
 <!-----Experiences-------->

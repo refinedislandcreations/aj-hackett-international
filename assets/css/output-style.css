@@ -450,9 +450,6 @@ a {
 .inset-0 {
   inset: 0px;
 }
-.bottom-0 {
-  bottom: 0px;
-}
 .left-0 {
   left: 0px;
 }
@@ -505,10 +502,6 @@ a {
   margin-top: 10%;
   margin-bottom: 10%;
 }
-.my-5p {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 .mb-10p {
   margin-bottom: 10%;
 }
@@ -532,6 +525,9 @@ a {
 }
 .mt-10p {
   margin-top: 10%;
+}
+.mt-15p {
+  margin-top: 15%;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -713,6 +709,12 @@ a {
 .p-5p {
   padding: 5%;
 }
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
@@ -816,10 +818,6 @@ a {
   font-size: 1.875rem;
   line-height: 1;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 1;
-}
 .text-base {
   font-size: 1rem;
   line-height: 1.2;
@@ -844,6 +842,12 @@ a {
 }
 .underline {
   text-decoration-line: underline;
+}
+.opacity-80 {
+  opacity: 0.8;
+}
+.opacity-90 {
+  opacity: 0.9;
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -1317,6 +1321,9 @@ footer {
   .sm\:mt-10p {
     margin-top: 10%;
   }
+  .sm\:mt-20p {
+    margin-top: 20%;
+  }
   .sm\:mt-2p {
     margin-top: 2%;
   }
@@ -1404,12 +1411,12 @@ footer {
     font-size: 1.5rem;
     line-height: 1.2;
   }
-  .sm\:text-4xl {
-    font-size: 2.25rem;
+  .sm\:text-3xl {
+    font-size: 1.875rem;
     line-height: 1;
   }
-  .sm\:text-6xl {
-    font-size: 3.75rem;
+  .sm\:text-4xl {
+    font-size: 2.25rem;
     line-height: 1;
   }
   .sm\:text-sm {
@@ -1431,6 +1438,9 @@ footer {
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:mt-15p {
+    margin-top: 15%;
   }
   .md\:mt-5p {
     margin-top: 5%;
@@ -1481,6 +1491,10 @@ footer {
   }
   .lg\:pt-5p {
     padding-top: 5%;
+  }
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 1;
   }
   .lg\:text-6xl {
     font-size: 3.75rem;

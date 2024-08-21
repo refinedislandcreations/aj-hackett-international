@@ -23,12 +23,14 @@ seo:
 header:
  - image: /images/skypark-aj-hackett-international-banner-image.jpg
    position: 20% 50%
-   label: 
+   label: A woman captured mid-air in a bungy jump, with the photo taken from the vantage point where she leaped off.
    title: Skypark
    text: Experience Unforgettable Thrills
 site:
  - location: Cairns
-   url:
+   id: cairns
+   url: https://www.skyparkcairns.com/
+   url-alt: Explore Skypark Cairns
    image: /images/cairns-australian-skypark-by-aj-hackett-international.png
    image-position: 50% 70%
    image-alt:
@@ -38,9 +40,8 @@ site:
    - "Bungy roof"
    - "Walk the Plank"
    description: First opened in 1990, Skypark Cairns by AJ Hackett is a rainforest world of adventure that needs to be seen to be believed. Offering a range of exciting experiences, it has something for everyone—from thrill-seekers to spectators—and is home to Australia’s ONLY Bungy, Giant Swing, Cairns’ highest viewing platform, and Walk the Plank!
-   url:
-   url-alt:
  - location: Macau
+   id: macau
    url:
    url-alt:
    image: /images/macau-skypark-by-aj-hackett-international.png
@@ -53,6 +54,7 @@ site:
    - "Tower Climb"
    description: The sky is the playground when you visit Macau Tower. The top of the Macau Tower promises a sweeping, unobstructed view of the Macau islands, all the way to Hengqin, Zhuhai, and the neighboring mainland China. Skypark Macau Tower is home to the 2007 Guinness World Record for the Highest Commercial Bungy Jump (Building). At 233 meters, you can live on the edge and take the plunge or enjoy a leisurely walk around the Skywalk platform with your friends and family. Become your favorite superhero with Skyjump or conquer the world's only urban Tower Climb and Macau’s highest summit at 338 meters.
  - location: Sentosa
+   id: sentosa
    url:
    url-alt:
    image: /images/temp-img.jpg
@@ -64,6 +66,7 @@ site:
    - "Skybridge"
    description: Standing 47 meters above the most stunning scenery in Singapore, you can take in the view across the ocean, take a deep breath, and then take the plunge at Singapore’s only bungy jump. On the Giant Swing, up to three people can experience a rush as they are winched 40 meters above the ground, enjoying an epic view across Siloso Beach and soaring at speeds of up to 120 km/h.
  - location: Normandie 
+   id: normandie
    url:
    url-alt:
    image: /images/temp-img.jpg
@@ -90,12 +93,11 @@ site:
 <section class="max-w-screen-2xl mx-auto">
   <div class="px-5p pb-10p">
     {% for item in page.site %}
+    <div id="{{ item.id }}">
         <h3 class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p"> {{ item.location }} </h3>
         <hr class="pb-1p">
         <div class="relative h-full min-h-30 sm:min-h-50 mt-2p 2xl:mt-1p">
-            <a href="{{ item.url }}">
-                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
-            </a>
+              <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
         </div>
         <h4 class="uppercase text-xl sm:text-2xl py-5p xl:py-2p">
             {% for experience in item.experiences %}
@@ -106,6 +108,7 @@ site:
         <div class="mb-20p md:mb-15p sm:mt-5p xl:mt-2p xl:mb-10p">
             <a href="{{ item.url }}" class="button" aria-label="{{ item.url-alt }}">Visit the site</a>
         </div>
+      </div>
     {% endfor %}
   </div>
 </section>

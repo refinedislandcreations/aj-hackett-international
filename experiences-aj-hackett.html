@@ -25,7 +25,7 @@ seo:
   hide-from-google: true
 header:
  - image: /images/family-swing-cairns-aj-hackett-international.png
-   position: 
+   position: 27% 50%
    label: 
    title: Experiences
    text: Explore Unforgettable Thrills and Sky-High Fun
@@ -221,14 +221,14 @@ experience:
    - name: "Normandie"
      url: "https://example.com/sentosa"
      url-alt: "Visit Normandie"
-     description: "Challenge yourself by climbing on our World Cup-sized walls, where all levels of difficulty are on display for you to try out! Our team of trained operators will ensure you give it your best while keeping you safe during your climb with the use of harnesses and all relevant equipment."
+   description: "Challenge yourself by climbing on our World Cup-sized walls, where all levels of difficulty are on display for you to try out! Our team of trained operators will ensure you give it your best while keeping you safe during your climb with the use of harnesses and all relevant equipment."
 ---
 
-<section class="px-5p pt-10p pb-5p">
-
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pt-15p sm:pt-10p xl:pt-5p pb-10p sm:pb-0">
     <div class="pb-5p">
         <p class="pb-5p sm:pb-2p"> At AJ Hackett Skypark, adventure awaits around every corner! Dive into a world of excitement with our exhilarating activities designed for thrill-seekers and families alike. Whether you’re soaring through the sky on our iconic bungy jumps, experiencing the rush of our giant swings, or gliding along breathtaking ziplines, each experience offers a unique way to challenge yourself and enjoy stunning views. Explore our sky-high attractions, including the Skybridge, Skycube, and the nostalgic Walk The Plank, or engage in fun-filled activities like luge rides, adventure parks, and climbing walls. Whatever your adrenaline level, there’s something for everyone to enjoy at AJ Hackett Skypark—come and create unforgettable memories!</p>
-        <p class="pb-5p"> Check out each individual experience of Skypark by AJ Hackett.</p>
+        <p class="pb-5p sm:pb-0"> Check out each individual experience of Skypark by AJ Hackett.</p>
     </div>
 
     <a href="#">
@@ -267,27 +267,30 @@ experience:
         <h3 class="title-font text-xl pb-1p grow"> Climbing Walls </h3>
     </a>
     <hr class="pb-1p">
-    
+  </div> 
 </section>
 
 
 <!-----BG and Text-------->
 
-<section class="my-5p"> 
+<section class="max-w-screen-2xl mx-auto">
+  <div class="my-5p">
     <div class="bg-cover bg-no-repeat relative" style="background-image: url('{{ page.quote-image }}'); height: 24rem;">
         <div class="flex flex-col justify-center h-full p-5">
             <p class="header-font text-4xl sm:text-6xl">Challenge life. <br> Challenge yourself.</p>
         </div>
     </div>
+  </div> 
 </section>
 
 
 <!-----Experiences-------->
 
-<section class="px-5p pb-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p pb-15p lg:pb-10p">
     {% for item in page.experience %}
-    <div class="pt-10p" id="{{ item.id }}">
-        <h3 class="title-font text-2xl sm:text-4xl pb-1p">{{ item.name }}</h3>
+    <div class="pt-15p sm:pt-10p lg:pt-5p" id="{{ item.id }}">
+        <h3 class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p">{{ item.name }}</h3>
         <hr class="pb-2p sm:pb-1p">
 
         <!-- Large Featured Image -->
@@ -309,16 +312,17 @@ experience:
          </div>
 
         <!-- Description -->
-        <p class="pt-5p sm:pt-2p">{{ item.description }}</p>
+        <p class="pt-5p sm:pt-5p lg:pt-2p">{{ item.description }}</p>
 
         <!-- Location Links -->
-        <h4 class="uppercase text-2xl py-2p sm:py-1p">
+        <h4 class="uppercase text-2xl py-5p sm:py-2p">
             {% for location in item.locations %}
                 <a href="{{ location.url }}" alt="{{ location.url-alt }}" class="grow">{{ location.name }}</a>{% if forloop.last == false %} | {% endif %}
             {% endfor %}
         </h4>
     </div>
     {% endfor %}
+  </div>
 </section>
 
 

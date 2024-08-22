@@ -1,7 +1,7 @@
 paths:
   uploads: uploads
   static: ''
-  dam_uploads: ''
+  dam_uploads: dam_uploads
   dam_static: ''
   collections: ''
   data: _data
@@ -243,9 +243,10 @@ _inputs:
     cascade: true
   pdf:
     type: document
+    label: Reconciliation PDF
     options:
-      empty_type:
-      paths:
+      empty_type: text
+      paths: pdfs
     cascade: true
 data_config: {}
 timezone: Etc/UTC

@@ -145,12 +145,11 @@ safety:
 </section>
 
 
-<!-----Skypark-------->
-
+<!------Skypark-------->
 <section class="max-w-screen-2xl mx-auto">
   <div class="px-5p pt-10p pb-5p xl:pt-5p">
     <div class="pb-5p">
-        <p class="title-font text-2xl sm:text-4xl"> Skypark by AJ Hackett </p>
+      <p class="title-font text-2xl sm:text-4xl">Skypark by AJ Hackett</p>
     </div>
 
     <p class="pb-10p sm:pb-5p">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
@@ -165,25 +164,25 @@ safety:
         </h4>
       </div>
     </div>
-    
 
     <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-5p">
-        {% for item in page.site %}
-          <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col mb-10p sm:mb-0">
-            <div class="relative w-full h-48">
-              <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
-                  <img class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
-              </a>
+      {% for item in page.site %}
+        <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col mb-10p sm:mb-0">
+          <div class="relative w-full h-48">
+            <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
+              <img class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+            </a>
           </div>
           <h3 class="title-font text-3xl py-3">{{ item.location }}</h3>
           <div class="mt-4">
-              <a href="{{ item.url }}" class="button">Find out more</a>
+            <a href="{{ item.url }}" class="button">Find out more</a>
           </div>
-          </div>
-          {% endfor %}
-      </div>
-  </div>  
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
+
 
 
 

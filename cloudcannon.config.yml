@@ -241,5 +241,11 @@ _inputs:
     type: image
     label: Sixth image
     cascade: true
+  pdf:
+    type: document
+    options:
+      empty_type:
+      paths:
+    cascade: true
 data_config: {}
 timezone: Etc/UTC

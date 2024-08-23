@@ -577,6 +577,9 @@ a {
 .h-lvh {
   height: 100lvh;
 }
+.h-80 {
+  height: 20rem;
+}
 .min-h-30 {
   min-height: 30vh;
 }
@@ -648,6 +651,9 @@ a {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-y-5 {
   row-gap: 1.25rem;
@@ -1223,7 +1229,7 @@ footer {
   }
 
   .hamburger-wrapper {
-    top: 43%;
+    top: 45%;
   }
   
 }
@@ -1231,7 +1237,7 @@ footer {
 
 @media (min-width:400px) {
   .header-margin{
-    margin-top: 25%;
+    margin-top: 24%;
   }
 
   .timeline-margin {
@@ -1239,11 +1245,11 @@ footer {
   }
 
   .header-logo-position {
-    padding-top: 5%;
+    padding-top: 4%;
   }
 
   .hamburger-wrapper {
-    top: 41%;
+    top: 44%;
   }
   
 }
@@ -1382,6 +1388,9 @@ footer {
   .sm\:hidden {
     display: none;
   }
+  .sm\:h-96 {
+    height: 24rem;
+  }
   .sm\:min-h-40 {
     min-height: 40vh;
   }
@@ -1488,6 +1497,9 @@ footer {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .md\:pb-10p {
     padding-bottom: 10%;
   }
@@ -1516,6 +1528,9 @@ footer {
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .lg\:pb-10p {
     padding-bottom: 10%;

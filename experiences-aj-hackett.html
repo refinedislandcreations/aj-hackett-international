@@ -67,17 +67,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Swings"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Cairns"
      url: skypark-aj-hackett.html#cairns
@@ -94,17 +83,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Zipline"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Normandie"
      url: skypark-aj-hackett.html#normandie
@@ -115,17 +93,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Skybridge"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Normandie"
      url: skypark-aj-hackett.html#normandie
@@ -136,17 +103,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Walk The Plank"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Cairns"
      url: skypark-aj-hackett.html#cairns
@@ -157,17 +113,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Luge"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Normandie"
      url: skypark-aj-hackett.html#normandie
@@ -178,17 +123,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Adventure Parks"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Normandie"
      url: skypark-aj-hackett.html#normandie
@@ -199,17 +133,6 @@ experience:
    image: /images/temp-img.jpg
    image-position: center
    image-alt: "Climbing Walls"
-   gallery-images:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
-   - img-url: /images/temp-img.jpg
-     img-alt:
    locations: 
    - name: "Normandie"
      url: skypark-aj-hackett.html#normandie
@@ -289,22 +212,24 @@ experience:
         <hr class="pb-2p sm:pb-1p">
 
         <!-- Large Featured Image -->
-        <div class="relative h-full min-h-30 sm:min-h-50">
+        <div class="relative h-80 sm:h-96 lg:h-112">
             <a href="{{ item.url }}">
                 <img class="absolute inset-0 w-full h-full object-cover rounded-3xl pb-1.5" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
             </a>
         </div>
 
-        <!-- Gallery Images -->
-        <div class="grid grid-cols-5 gap-1 w-full overflow-x-auto" id="lightgallery">
+        <!-- Conditional Gallery Images -->
+        {% if item.name == "Bungy" %}
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 w-full overflow-x-auto">
             {% for image in item.gallery-images %}
-               <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
-                  <div class="aspect-square relative">
-                        <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
-                  </div>
-               </a>
+            <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
+                <div class="aspect-square relative">
+                    <img class="w-full h-full object-cover object-center rounded-xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
+                </div>
+            </a>
             {% endfor %}
-         </div>
+        </div>
+        {% endif %}
 
         <!-- Description -->
         <p class="pt-5p sm:pt-5p lg:pt-2p">{{ item.description }}</p>
@@ -319,10 +244,3 @@ experience:
     {% endfor %}
   </div>
 </section>
-
-
-
-
-
-
-

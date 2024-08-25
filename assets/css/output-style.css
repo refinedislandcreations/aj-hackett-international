@@ -1260,6 +1260,16 @@ footer {
     top: 44%;
     right: 17%;
   }
+
+
+  .mobile-menu {
+    width: 350px; 
+    height: 851px;
+  }
+
+  .mobile-menu.active {
+    right: 26px;
+  }
   
 }
 
@@ -1338,8 +1348,12 @@ footer {
   }
 
   .logo {
-    width: 80%; /* Logo size in mobile menu */
+    width: 60%; /* Logo size in mobile menu */
     margin-bottom: 2rem;
+  }
+
+  .close-button {
+    top: 3rem;
   }
 
   .mobile-menu {
@@ -1355,6 +1369,13 @@ footer {
     height: 43rem;
   }
 
+  .close-button {
+    right: 4.2rem;
+  }
+
+  .mobile-menu.active {
+    right: 0px;
+  }
 }
 
 @media (min-width:700px) {
@@ -1375,6 +1396,8 @@ footer {
     top: 62%;
     right: 10%;
   }
+
+
 
 }
 

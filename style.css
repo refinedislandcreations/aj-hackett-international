@@ -183,21 +183,22 @@ header {
   display: fixed;
   background-color: #033357; /* Dark blue background */
   color: #FFFDFF; /* Light text color */
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
   position: fixed;
   top: 0;
   right: -500px; /* Initially hidden off-screen */
   width: 300px; /* Width of the menu */
-  height: 100vh;
+  height: 841px;
   text-align: left;
   overflow-y: auto;
   z-index: 50;
-  transition: right 0.3s ease; /* Slide effect */
+  transition: right 0.7s ease; /* Slide effect */
   border-left: 4px solid #D2AE39; /* Yellow left border */
 }
 
 .mobile-menu.active {
-  right: -24px; 
+  right: 38px; 
 }
 
 .mobile-menu-content {
@@ -212,7 +213,7 @@ header {
   /* padding: 1rem; */
   display: block;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .submenu {
@@ -237,8 +238,8 @@ header {
   color: #FFFDFF; /* Light text color */
   font-size: 2rem; /* Size of the close icon */
   position: absolute; /* Position it in the top-right corner */
-  top: 1rem; /* Adjust as needed */
-  right: 1rem; /* Adjust as needed */
+  top: 2.5rem;
+  right: 1.7rem;
   cursor: pointer;
 }
 
@@ -336,6 +337,10 @@ footer {
   z-index: 1000;
 }
 
+.header-image-height {
+  height: 33rem;
+}
+
 @media (min-width:350px) {
 
   .header-margin{
@@ -368,6 +373,17 @@ footer {
 
   .hamburger-wrapper {
     top: 44%;
+    right: 17%;
+  }
+
+
+  .mobile-menu {
+    width: 350px; 
+    height: 851px;
+  }
+
+  .mobile-menu.active {
+    right: 26px;
   }
   
 }
@@ -375,8 +391,21 @@ footer {
 
 @media (min-width:450px) {
 
+  .header-margin{
+    margin-top: 24%;
+  }
+
   .header-logo-position {
-    padding-top: 6%;
+    padding-top: 5%;
+  }
+
+  .hamburger-wrapper {
+    top: 49%;
+    right: 16%;
+  }
+
+  .header-image-height {
+    height: 36rem;
   }
   
 }
@@ -386,9 +415,44 @@ footer {
   .header-margin{
     margin-top: 23%;
   }
+
+  .header-image-height {
+    height: 37rem;
+  }
+
+  .hamburger-wrapper {
+    top: 54%;
+    right: 15%;
+  }
   
 }
 
+
+@media (min-width:550px) {
+.header-image-height {
+  height: 40rem;
+}
+}
+
+@media (min-width:600px) {
+  .header-margin {
+    margin-top: 19%;
+  }
+
+  .header-image-height {
+    height: 42rem;
+  }
+
+  .header-logo-position {
+    padding-top: 4%;
+  }
+
+  .hamburger-wrapper {
+    top: 57%;
+    right: 12%;
+  }
+
+  }
 
 @media (min-width:640px) {
 
@@ -399,8 +463,12 @@ footer {
   }
 
   .logo {
-    width: 80%; /* Logo size in mobile menu */
+    width: 60%; /* Logo size in mobile menu */
     margin-bottom: 2rem;
+  }
+
+  .close-button {
+    top: 3rem;
   }
 
   .mobile-menu {
@@ -408,40 +476,133 @@ footer {
     padding: 2rem;
   }
 
-  .header-margin{
-    margin-top: 24%;
+  .header-margin {
+    margin-top: 19%;
   }
 
+  .header-image-height {
+    height: 43rem;
+  }
+
+  .close-button {
+    right: 4.2rem;
+  }
+
+  .mobile-menu.active {
+    right: 0px;
+  }
 }
 
 @media (min-width:700px) {
 
   .header-margin{
-    margin-top: 22%;
+    margin-top: 18%;
   }
 
 }
 
-
-@media (min-width:700px) {
+@media (min-width:800px) {
 
   .header-margin{
-    margin-top: 22%;
+    margin-top: 17%;
+  }
+
+  .hamburger-wrapper {
+    top: 62%;
+    right: 10%;
+  }
+
+
+
+}
+
+@media (min-width:850px) {
+
+  .header-margin{
+    margin-top: 16%;
   }
 
 }
+
 
 @media (min-width:1024px) {
   .header-margin{
-    margin-top: 12%;
+    margin-top: 15%;
+  }
+
+  .hamburger-wrapper {
+    top: 62%;
+    right: 8%;
   }
   
 }
 
-@media (min-width:1536px) {
+@media (min-width:1100px) {
   .header-margin{
-    margin-top: 9%;
+    margin-top: 14%;
+  }
+
+  .header-box {
+    margin-right: -7rem;}
+
+    .hamburger-wrapper {
+      right: 10%;
+    }
+
+}
+
+@media (min-width:1200px) {
+  
+  .header-logo-position {
+    padding-top: 3%;
+  }
+  
+  .header-margin{
+    margin-top: 12%;
+  }
+
+}
+
+@media (min-width:1300px) {
+  .header-margin{
+    margin-top: 11%;
   }
   
 }
+
+@media (min-width:1400px) {
+  .hamburger-wrapper {
+    right: 8%;
+  }
+  
+}
+
+
+@media (min-width:1500px) {
+  .header-logo-position {
+    padding-top: 2%;
+  }
+  
+  .header-margin{
+    margin-top: 9%;
+  }
+
+  
+}
+
+@media (min-width:1600px) {
+
+  
+  .header-margin{
+    margin-top: 8%;
+  }
+
+  .header-image-height {
+    height: 45rem;
+  }
+
+  
+}
+
+
 

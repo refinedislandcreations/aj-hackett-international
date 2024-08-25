@@ -31,17 +31,15 @@
             </div>
             <a href="#" class="pt-5p">Our Brands</a>
             <div class="submenu">
-                <a href="/skypark-aj-hackett.html" class="pl-5p pb-2p">Skypark by AJ Hackett</a>
-                <a href="/pondok-santi-estate.html" class="pl-5p">Pondok Santi Estate</a>
+                <a href="/skypark-aj-hackett.html" class="pl-5p pb-2p -mr-15p">Skypark by AJ Hackett</a>
+                <a href="/pondok-santi-estate.html" class="pl-5p -mr-10p">Pondok Santi Estate</a>
             </div>
-            <a href="/experiences-aj-hackett.html" class="pt-5p">Our Experiences</a>
+            <a href="/experiences-aj-hackett.html" class="pt-5p">Experiences</a>
             <a href="/projects.html" class="pt-5p">Projects</a>
             <a href="/sustainability.html" class="pt-5p">Sustainability</a>
-            <div class="submenu">
-                <a href="/accessibility.html" class="pl-5p pb-2p">Accessibility</a>
-                <a href="/reconciliation.html" class="pl-5p pb-2p">Reconciliation</a>
-                <a href="/community.html" class="pl-5p">Community</a>
-            </div>
+            <a href="/accessibility.html" class="pt-5p">Accessibility</a>
+            <a href="/reconciliation.html" class="pt-5p">Reconciliation</a>
+            <a href="/community.html" class="pt-5p">Community</a>
             <a href="/meet-the-team.html" class="pt-5p">Get to Know Us</a>
             <div class="submenu">
                 <a href="/meet-the-team.html" class="pl-5p pb-2p">Meet Our Team</a>
@@ -60,7 +58,7 @@
 
 <section class="header-margin max-width mx-auto"> 
     {% for item in page.header %}
-    <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p h-[34rem] xl:h-[45rem]" 
+    <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p header-image-height" 
      style="background-image: url('{{ item.image }}'); background-position: {{ item.position }};"
      alt="{{ item.label | default: item.title }}">
         <div class="flex flex-col justify-end h-full p-5">

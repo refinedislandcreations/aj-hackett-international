@@ -223,6 +223,12 @@ header {
   margin-left: 5%;
 }
 
+.footer-contact {
+  display: inline-block;
+  border-bottom: 2px solid #D2AE39;
+  width: auto;
+}
+
 .submenu a {
   font-size: 1.1rem; /* Slightly smaller for subpages */
 }
@@ -274,6 +280,15 @@ footer {
 .text-gray-300 {
   color: #B0BEC5; /* Light gray for footer text */
   margin-top: 1rem;
+}
+
+.footer-link,
+.footer-contact {
+  font-size: 1.1rem; /* Ensure all links have the same font size */
+  color: #FFFDFF; /* Light text color */
+  text-decoration: none;
+  padding: 0.5rem 0; /* Adjusted padding for cleaner look */
+  transition: color 0.3s;
 }
 
 /*Scroll to top button */ 

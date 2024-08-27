@@ -1217,9 +1217,8 @@ footer {
 
 
 .header-box {
-  margin-right: -5rem; 
+  right: -5%; 
   margin-top: 40%; 
-  margin-left: 1%;
 }
 
 .header-margin{
@@ -1365,11 +1364,7 @@ footer {
 
 @media (min-width:640px) {
 
-  .header-box {
-    margin-right: -5rem; 
-    margin-top: 40%; 
-    margin-left: 30%;
-  }
+
 
   .logo {
     width: 60%; /* Logo size in mobile menu */
@@ -1451,8 +1446,7 @@ footer {
     margin-top: 14%;
   }
 
-  .header-box {
-    margin-right: -7rem;}
+ 
 
     .hamburger-wrapper {
       right: 10%;

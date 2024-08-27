@@ -138,7 +138,7 @@ safety:
           </div>
         </div>
         <div class="relative h-full min-h-30 sm:min-h-50">
-            <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
+            <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.image-1 }}" style="object-position: {{ page.image-1-position }};" alt="{{ page.image-1-alt }}" />
         </div>
     </div>
   </div>
@@ -170,7 +170,7 @@ safety:
         <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col mb-10p sm:mb-0">
           <div class="relative w-full h-48">
             <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
-              <img class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+              <img loading="lazy" class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
             </a>
           </div>
           <h3 class="title-font text-3xl py-3">{{ item.location }}</h3>
@@ -198,7 +198,7 @@ safety:
       <!-- Image 1 -->
       {% for item in page.pondok %}
       <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+        <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -229,7 +229,7 @@ safety:
 
       {% for item in page.projects %}
       <div class="relative h-full min-h-30 sm:min-h-50">
-          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+          <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -258,7 +258,7 @@ safety:
       <!-- Image 1 -->
       {% for item in page.sustainability %}
       <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+        <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -288,7 +288,7 @@ safety:
 
       {% for item in page.accessibility %}
       <div class="relative h-full min-h-30 sm:min-h-50">
-          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+          <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -318,7 +318,7 @@ safety:
       <!-- Image 1 -->
       {% for item in page.reconciliation %}
       <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
-        <img class="absolute inset-0 w-full h-full object-contain rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+        <img loading="lazy" class="absolute inset-0 w-full h-full object-contain rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -348,7 +348,7 @@ safety:
 
       {% for item in page.community %}
       <div class="relative h-full min-h-30 sm:min-h-50">
-          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+          <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -378,7 +378,7 @@ safety:
       <!-- Image 1 -->
       {% for item in page.team %}
       <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+        <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -409,7 +409,7 @@ safety:
 
       {% for item in page.purpose %}
       <div class="relative h-full min-h-30 sm:min-h-50">
-          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+          <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 
@@ -438,7 +438,7 @@ safety:
       <!-- Image 1 -->
       {% for item in page.safety %}
       <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">
-        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+        <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
       </div>
       {% endfor %}
 

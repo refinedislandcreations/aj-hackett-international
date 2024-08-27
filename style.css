@@ -21,7 +21,7 @@ html { scroll-behavior: smooth; }
 
 /* For regular laptops and smaller screens */
 body {
-    max-width: 100%; /* Allow it to expand to the full width of the screen */
+    max-width: 100vw; /* Allow it to expand to the full width of the screen */
     background-color: #FFFDFF; 
     color:  #033357; 
     font-family: "Source Sans 3", sans-serif;
@@ -293,13 +293,17 @@ footer {
 
 /*Scroll to top button */ 
 
-
+.back-to-top-button-parent {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 .myBtn {
   display: none; 
-  position: fixed; 
+  position: absolute; 
   bottom: 20px; 
-  right: max(55px, calc(50vw - 738px));
+  right: 0;
   z-index: 99; 
   border: none; 
   outline: none; 

@@ -58,7 +58,7 @@ gallery-images:
         <p class="title-font text-2xl sm:text-4xl pb-5p">Skypark Cairns Roof </p>
         <div class="sm:grid sm:grid-cols-2 mb-5p">
             <div class="relative h-full min-h-30 sm:min-h-50">
-                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.cairns-roof-image }}" style="object-position: {{ page.cairns-roof-position }};" alt="{{ page.cairns-roof-alt }}" />
+                <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.cairns-roof-image }}" style="object-position: {{ page.cairns-roof-position }};" alt="{{ page.cairns-roof-alt }}" />
             </div>
             <div class="sm:pl-5p">
                 <p class="py-5p"> In 2023, Skypark Cairns underwent renovations at the top of the tower. After four years of COVID, it was time to bring some changes to our site. </p>
@@ -67,7 +67,7 @@ gallery-images:
         </div>
         <div class="sm:grid sm:grid-cols-2 mb-5p">
             <div class="relative h-full min-h-30 sm:min-h-50">
-                <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.cairns-cyclone-image }}" style="object-position: {{ page.cairns-cyclone-position }};" alt="{{ page.cairns-cyclone-alt }}" />
+                <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ page.cairns-cyclone-image }}" style="object-position: {{ page.cairns-cyclone-position }};" alt="{{ page.cairns-cyclone-alt }}" />
             </div>
             <div class="sm:pl-5p">
                 <p class="py-5p"> Located in the far north of Queensland, our site faces unique challenges, with the wet season being the most unpredictable, as well as the heat and humidity factors to contend with. </p>
@@ -84,7 +84,7 @@ gallery-images:
             {% for image in page.gallery-images %}
             <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
                 <div class="aspect-square relative">
-                    <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
+                    <img loading="lazy" class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
                 </div>
                 <p class="mt-2p text-center text-sm text-gray-600 mb-5p">{{ image.caption }}</p>
             </a>

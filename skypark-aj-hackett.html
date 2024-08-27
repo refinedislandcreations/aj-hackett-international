@@ -178,7 +178,7 @@ site:
 
         <!-- Large Featured Image -->
         <div class="relative h-full min-h-30 sm:min-h-50 mt-2p mb-1p 2xl:mt-1p">
-          <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
+          <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
         </div>
 
         <!-- Gallery Images -->
@@ -186,7 +186,7 @@ site:
             {% for image in item.gallery-images %}
                <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
                   <div class="aspect-square relative">
-                        <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" style="object-position: {{ image.img-position }};"" alt="{{ image.img-alt }}">
+                        <img loading="lazy" class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" style="object-position: {{ image.img-position }};"" alt="{{ image.img-alt }}">
                   </div>
                </a>
             {% endfor %}

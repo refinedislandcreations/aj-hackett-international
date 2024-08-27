@@ -58,7 +58,7 @@ gallery-images:
       {% for image in page.gallery-images %}
       <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
         <div class="aspect-square relative mb-2p">
-          <img class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
+          <img loading="lazy" class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" alt="{{ image.img-alt }}">
         </div>
       </a>
       {% endfor %}

@@ -215,14 +215,12 @@ experience:
 
         <!-- Large Featured Image -->
         <div class="relative h-80 sm:h-96 lg:h-112">
-            <a href="{{ item.url }}">
-                <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl pb-1.5" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
-            </a>
+              <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl pb-1.5" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
         </div>
 
         <!-- Conditional Gallery Images -->
         {% if item.name == "Bungy" %}
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 w-full overflow-x-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 w-full overflow-x-auto" id="lightgallery">
             {% for image in item.gallery-images %}
             <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
                 <div class="aspect-square relative">

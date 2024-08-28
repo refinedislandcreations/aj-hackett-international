@@ -234,12 +234,13 @@ experience:
         <!-- Description -->
         <p class="pt-5p sm:pt-5p lg:pt-2p">{{ item.description }}</p>
 
-        <!-- Location Links -->
+        <!-- Location Links 
         <h4 class="uppercase text-2xl py-5p sm:py-2p">
             {% for location in item.locations %}
                 <a href="{{ location.url }}" alt="{{ location.url-alt }}" class="grow">{{ location.name }}</a>{% if forloop.last == false %} | {% endif %}
             {% endfor %}
         </h4>
+        -->
     </div>
     {% endfor %}
   </div>

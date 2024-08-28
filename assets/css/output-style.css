@@ -1763,6 +1763,9 @@ footer {
   .xl\:mt-2p {
     margin-top: 2%;
   }
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
   .xl\:pb-0 {
     padding-bottom: 0px;
   }

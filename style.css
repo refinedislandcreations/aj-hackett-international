@@ -599,9 +599,15 @@ footer {
   .header-margin{
     margin-top: 9%;
   }
-
   
 }
+
+@media (min-width:1280px) {
+.header-box {
+  margin-top: 35%;
+}
+}
+
 
 @media (min-width:1600px) {
 

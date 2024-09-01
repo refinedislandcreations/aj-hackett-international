@@ -1498,6 +1498,12 @@ footer {
 }
 }
 
+@media (min-width:1536px) {
+  .header-box {
+    margin-top: 30%;
+  }
+  }
+
 
 @media (min-width:1600px) {
 

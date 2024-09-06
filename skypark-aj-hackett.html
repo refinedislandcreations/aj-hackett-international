@@ -160,19 +160,19 @@ site:
 ---
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p pt-15p sm:pt-10p xl:pt-5p pb-10p sm:pb-0">
+  <div class="px-5p pt-5p pb-5p sm:pb-0">
     <div>
-        <p class="pb-5p xl:pb-2p"> 2020 shaped up to be a year unlike any other. On top of managing a global pandemic, <strong> we celebrated our 30th birthday in both Cairns and Normandie and launched our new brand identity—Skypark by AJ Hackett</strong>.</p>
-        <p class="pb-5p xl:pb-2p"> Skypark celebrates everything that AJ Hackett is famous for: <strong> creating positively life-changing experiences through our range of gravity-defying activities while creating a destination of all-inclusive fun activities you will want to keep coming back for</strong>.</p>
-        <p class="pb-5p sm:pb-10p xl:pb-5p"> Check out each individual site to experience the many worlds of Skypark by AJ Hackett.</p>
+        <p class="pb-2p"> 2020 shaped up to be a year unlike any other. On top of managing a global pandemic, we celebrated our 30th birthday in both Cairns and Normandie and launched our new brand identity—Skypark by AJ Hackett.</p>
+        <p class="pb-2p"> Skypark celebrates everything that AJ Hackett is famous for: creating positively life-changing experiences through our range of gravity-defying activities while creating a destination of all-inclusive fun activities you will want to keep coming back for.</p>
+        <p> Check out each individual site to experience the many worlds of Skypark by AJ Hackett.</p>
     </div>
   </div>
 </section>
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p pb-15p lg:pb-10p">
+  <div class="px-5p pb-5p">
     {% for item in page.site %}
-      <div id="{{ item.id }}" class="pt-15p sm:pt-10p lg:pt-5p">
+      <div id="{{ item.id }}" class="pt-5p">
         <h3 class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p">{{ item.location }}</h3>
         <hr class="pb-1p">
 
@@ -200,10 +200,10 @@ site:
         </h4>
 
         <!-- Description -->
-        <p class="pb-10p sm:pb-2p 2xl:pb-1p pt-5p sm:pt-5p lg:pt-2p">{{ item.description }}</p>
+        <p class="pb-10p sm:pb-2p 2xl:pb-1p">{{ item.description }}</p>
 
         <!-- Visit the site button -->
-        <div class="mb-20p md:mb-15p sm:mt-5p xl:mt-2p xl:mb-10p">
+        <div class="mb-5p mt-2p">
             <a href="{{ item.url }}" class="button" aria-label="{{ item.url-alt }}">Visit the site</a>
         </div>
       </div>

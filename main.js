@@ -1,13 +1,14 @@
-$(document).ready(function() {
-    $('.hamburger-wrapper').click(function() {
-        $('.mobile-menu').toggleClass('active');
-        $('.hamburger-menu').toggleClass('active');
-    });
+// jQuery to toggle the mobile menu
+$(document).ready(function () {
+  // Open mobile menu on hamburger click
+  $('.hamburger-menu').click(function () {
+      $('.mobile-menu').toggle();
+  });
 
-    $('.close-button').click(function() {
-        $('.mobile-menu').removeClass('active');
-        $('.hamburger-menu').removeClass('active');
-    });
+  // Close mobile menu on button click
+  $('.close-button').click(function () {
+      $('.mobile-menu').hide();
+  });
 });
 
 

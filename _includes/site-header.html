@@ -1,3 +1,111 @@
+
+<!-- Header Section with Logo and Navigation -->
+<section class="max-w-screen-2xl mx-auto flex justify-between items-center fixed z-50 top-0 left-0 right-0 header-bg">
+    <div class="flex items-center justify-between w-full header-logo-position px-5 py-2">
+        <!-- Logo -->
+        <a href="/index.html" aria-label="Go to homepage" class="z-30">
+            <img src="/images/logo-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="w-44 sm:w-48">
+        </a>
+
+        <!-- Hamburger Menu for Small Screens -->
+        <div class="text-right relative block lg:hidden">
+            <div class="hamburger-wrapper">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Normal Navigation for Large Screens -->
+        <nav class="hidden lg:flex items-center space-x-3">
+            <a href="/meet-aj-hackett.html" class="nav-item">Meet AJ Hackett</a>
+            <div class="relative group">
+                <a href="#" class="nav-item">Our Brands</a>
+                <div class="absolute left-0 hidden group-hover:block bg-white shadow-md mt-2">
+                    <a href="/skypark-aj-hackett.html" class="block px-4 py-2 hover:bg-gray-100">Skypark by AJ Hackett</a>
+                    <a href="/pondok-santi-estate.html" class="block px-4 py-2 hover:bg-gray-100">Pondok Santi Estate</a>
+                </div>
+            </div>
+            <a href="/experiences-aj-hackett.html" class="nav-item">Our Experiences</a>
+            <a href="/projects.html" class="nav-item">Projects</a>
+            <div class="relative group">
+                <a href="/sustainability.html" class="nav-item">Sustainability</a>
+                <div class="absolute left-0 hidden group-hover:block bg-white shadow-md mt-2">
+                    <a href="/accessibility.html" class="block px-4 py-2 hover:bg-gray-100">Accessibility</a>
+                    <a href="/reconciliation.html" class="block px-4 py-2 hover:bg-gray-100">Reconciliation</a>
+                    <a href="/community.html" class="block px-4 py-2 hover:bg-gray-100">Community</a>
+                </div>
+            </div>
+            <div class="relative group">
+                <a href="/meet-the-team.html" class="nav-item">Meet Our Team</a>
+                <div class="absolute left-0 hidden group-hover:block bg-white shadow-md mt-2">
+                    <a href="/purpose-promise-values.html#purpose" class="block px-4 py-2 hover:bg-gray-100">Our Purpose, Promise, and Values</a>
+                </div>
+            </div>
+            <a href="/safety-management.html" class="nav-item">Safety Management</a>
+            <a href="/contact.html" class="nav-item">Contact Us</a>
+        </nav>
+    </div>
+</section>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu block lg:hidden">
+    <div class="mobile-menu-content">
+        <a href="/index.html" aria-label="Go to homepage">
+            <img src="/images/logo-white-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="logo">
+        </a>
+        <button class="close-button" aria-label="Close menu">&times;</button>
+        <nav>
+            <!-- Mobile Menu Links -->
+            <a href="/meet-aj-hackett.html">Meet AJ Hackett</a>
+            <div class="submenu">
+                <a href="/timeline.html" class="pl-5p">Timeline</a>
+            </div>
+            <a href="#" class="pt-5p">Our Brands</a>
+            <div class="submenu">
+                <a href="/skypark-aj-hackett.html" class="pl-5p pb-2p -mr-15p">Skypark by AJ Hackett</a>
+                <a href="/pondok-santi-estate.html" class="pl-5p -mr-10p">Pondok Santi Estate</a>
+            </div>
+            <a href="/experiences-aj-hackett.html" class="pt-5p">Our Experiences</a>
+            <a href="/projects.html" class="pt-5p">Projects</a>
+            <a href="/sustainability.html" class="pt-5p">Sustainability</a>
+            <div class="submenu">
+                <a href="/accessibility.html" class="pt-5p">Accessibility</a>
+                <a href="/reconciliation.html" class="pt-5p">Reconciliation</a>
+                <a href="/community.html" class="pt-5p">Community</a>
+            </div>
+            <a href="/meet-the-team.html" class="pt-5p">Meet Our Team</a>
+            <div class="submenu">
+                <a href="/purpose-promise-values.html#purpose" class="pl-5p pb-2p">Our Purpose, Promise, and Values</a>
+            </div>
+            <a href="/safety-management.html" class="pt-5p">Safety Management</a>
+            <a href="/contact.html" class="pt-5p">Contact Us</a>
+        </nav>
+    </div>
+</div>
+
+<section class="header-margin max-width mx-auto"> 
+    {% for item in page.header %}
+    <div class="bg-cover bg-no-repeat rounded-3xl relative mx-5p header-image-height" 
+     style="background-image: url('{{ item.image }}'); background-position: {{ item.position }};"
+     alt="{{ item.label | default: item.title }}">
+        <div class="flex flex-col justify-end xl:justify-start h-full p-5">
+            <div class="bg-dark-blue-transparent p-5 relative header-box">
+                <div style="margin-right: 10%;">
+                    <h1 class="header-font text-2xl sm:text-4xl md:text-5xl lg:text-6xl pb-2p">{{ item.title }}</h1>
+                    <p class="text-lg sm:text-xl italic">{{ item.text }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+
+<!---------
+
 <section class="max-w-screen-2xl mx-auto flex justify-between items-center fixed z-50 top-0 left-0 right-0 header-bg">
     <div class="flex items-center justify-between w-full header-logo-position px-5 py-2">
         <a href="/index.html" aria-label="Go to homepage" class="z-30">
@@ -24,9 +132,8 @@
         </a>
         <button class="close-button" aria-label="Close menu">&times;</button>
         <nav>
-            <a href="/meet-aj-hackett.html">AJ Hackett</a>
+            <a href="/meet-aj-hackett.html">Meet AJ Hackett</a>
             <div class="submenu">
-                <a href="/meet-aj-hackett.html" class="pl-5p pb-2p">Meet AJ Hackett</a>
                 <a href="/timeline.html" class="pl-5p">Timeline</a>
             </div>
             <a href="#" class="pt-5p">Our Brands</a>
@@ -34,18 +141,17 @@
                 <a href="/skypark-aj-hackett.html" class="pl-5p pb-2p -mr-15p">Skypark by AJ Hackett</a>
                 <a href="/pondok-santi-estate.html" class="pl-5p -mr-10p">Pondok Santi Estate</a>
             </div>
-            <a href="/experiences-aj-hackett.html" class="pt-5p">Experiences</a>
+            <a href="/experiences-aj-hackett.html" class="pt-5p">Our Experiences</a>
             <a href="/projects.html" class="pt-5p">Projects</a>
             <a href="/sustainability.html" class="pt-5p">Sustainability</a>
-            <a href="/accessibility.html" class="pt-5p">Accessibility</a>
-            <a href="/reconciliation.html" class="pt-5p">Reconciliation</a>
-            <a href="/community.html" class="pt-5p">Community</a>
-            <a href="/meet-the-team.html" class="pt-5p">Get to Know Us</a>
             <div class="submenu">
-                <a href="/meet-the-team.html" class="pl-5p pb-2p">Meet Our Team</a>
-                <a href="/purpose-promise-values.html#purpose" class="pl-5p pb-2p">Our Purpose</a>
-                <a href="/purpose-promise-values.htmlpromise" class="pl-5p pb-2p">Our Promise</a>
-                <a href="/purpose-promise-values.html#values" class="pl-5p pb-2p">Our Values</a>
+                <a href="/accessibility.html" class="pt-5p">Accessibility</a>
+                <a href="/reconciliation.html" class="pt-5p">Reconciliation</a>
+                <a href="/community.html" class="pt-5p">Community</a>
+            </div>
+            <a href="/meet-the-team.html" class="pt-5p">Meet Our Team</a>
+            <div class="submenu">
+                <a href="/purpose-promise-values.html#purpose" class="pl-5p pb-2p">Our Purpose, Promise, and Values</a>
             </div>
             <a href="/safety-management.html" class="pt-5p">Safety Management</a>
             <a href="/contact.html" class="pt-5p">Contact Us</a>
@@ -73,3 +179,4 @@
     {% endfor %}
 </section>
 
+------->

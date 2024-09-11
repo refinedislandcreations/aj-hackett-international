@@ -8,7 +8,7 @@
         </a>
 
         <!-- Hamburger Menu for Small Screens -->
-        <div class="text-right relative block lg:hidden">
+        <div class="text-right relative block">
             <div class="hamburger-wrapper">
                 <div class="hamburger-menu">
                     <span></span>
@@ -19,16 +19,22 @@
         </div>
 
         <!-- Normal Navigation for Large Screens -->
-        <nav class="hidden lg:flex items-center space-x-3">
-            <a href="/meet-aj-hackett.html" class="nav-item">Meet AJ Hackett</a>
+        <nav class="normal-nav items-center lg:space-x-3">
+            <div class="relative group">
+                <a href="/meet-the-team.html" class="nav-item">Our Team</a>
+                <div class="absolute left-0 hidden group-hover:block bg-white shadow-md mt-2">
+                    <a href="/meet-aj-hackett.html" class="block px-4 py-2 hover:bg-gray-100">Meet AJ Hackett</a>
+                    <a href="/purpose-promise-values.html" class="block px-4 py-2 hover:bg-gray-100">Our Purpose, Promise, and Values</a>
+                </div>
+            </div>
             <div class="relative group">
                 <a href="/skypark-aj-hackett.html" class="nav-item">Our Brands</a>
                 <div class="absolute left-0 hidden group-hover:block bg-white shadow-md mt-2">
                     <a href="/skypark-aj-hackett.html" class="block px-4 py-2 hover:bg-gray-100">Skypark by AJ Hackett</a>
                     <a href="/pondok-santi-estate.html" class="block px-4 py-2 hover:bg-gray-100">Pondok Santi Estate</a>
+                    <a href="/experiences-aj-hackett.html" class="block px-4 py-2 hover:bg-gray-100">Our Experiences</a>
                 </div>
             </div>
-            <a href="/experiences-aj-hackett.html" class="nav-item">Our Experiences</a>
             <a href="/projects.html" class="nav-item">Projects</a>
             <div class="relative group">
                 <a href="/sustainability.html" class="nav-item">Sustainability</a>
@@ -38,20 +44,14 @@
                     <a href="/community.html" class="block px-4 py-2 hover:bg-gray-100">Community</a>
                 </div>
             </div>
-            <div class="relative group">
-                <a href="/meet-the-team.html" class="nav-item">Meet Our Team</a>
-                <div class="absolute left-0 hidden group-hover:block bg-white shadow-md mt-2">
-                    <a href="/purpose-promise-values.html" class="block px-4 py-2 hover:bg-gray-100">Our Purpose, Promise, and Values</a>
-                </div>
-            </div>
-            <a href="/safety-management.html" class="nav-item">Safety Management</a>
+            <a href="/safety-management.html" class="nav-item">Safety</a>
             <a href="/contact.html" class="nav-item">Contact Us</a>
         </nav>
     </div>
 </section>
 
 <!-- Mobile Menu -->
-<div class="mobile-menu block lg:hidden">
+<div class="mobile-menu block">
     <div class="mobile-menu-content">
         <a href="/index.html" aria-label="Go to homepage">
             <img src="/images/logo-white-aj-hackett-international.png" alt="Logo of AJ Hackett International" class="logo">

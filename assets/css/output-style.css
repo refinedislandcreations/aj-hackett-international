@@ -915,22 +915,6 @@ header {
   z-index: 50;
 }
 
-
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 50;
-    background:  #FFFDFF; 
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .nav-item {
   padding: 5px 10px;
   margin: 0;
@@ -959,14 +943,7 @@ header {
   display: none;
 }
 
-@media (min-width:840px) {
-  .mobile-menu {
-    display: none;
-}
-  .normal-nav {
-    display: flex; 
-  }
-}
+
 
 
 .header-bg {
@@ -1103,20 +1080,19 @@ header {
   width: 100%;
   height: 4px;
   margin: 4px 0;
-  background-color: #033357;
+  background-color: #033357 !important;
   transition: transform 0.3s ease-in-out;
   z-index: 10; /* Make sure it's above other content */
   transform: none; /* Ensure no transformation is hiding it */
-  visibility: visible;
+  visibility: visible !important;
 }
 
 .mobile-menu {
-  display: fixed;
+  position: fixed;
   background-color: #033357; /* Dark blue background */
   color: #FFFDFF; /* Light text color */
   padding-left: 2rem;
   padding-top: 2rem;
-  position: fixed;
   top: 0;
   right: -500px; /* Initially hidden off-screen */
   width: 300px; /* Width of the menu */
@@ -1129,7 +1105,7 @@ header {
 }
 
 .mobile-menu.active {
-  right: 38px; 
+  right: 0; 
 }
 
 .mobile-menu-content {
@@ -1147,12 +1123,6 @@ header {
   font-size: 1.3rem;
 }
 
-.submenu {
-  margin-top: 0.5rem;
-  /* padding-left: 1.5rem;  Indent submenus */
-  border-left: 2px solid #D2AE39; 
-  margin-left: 5%;
-}
 
 .footer-contact {
   display: inline-block;
@@ -1463,6 +1433,17 @@ footer {
 
 
 
+}
+
+
+
+@media (min-width:840px) {
+  .mobile-menu {
+    display: none;
+}
+  .normal-nav {
+    display: flex; 
+  }
 }
 
 @media (min-width:850px) {

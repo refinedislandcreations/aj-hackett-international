@@ -923,6 +923,9 @@ header {
   z-index: 50;
 }
 
+ .normal-nav {
+  display: none 
+}
 
 /* General Styles for Navigation Items */
 .nav-item {
@@ -1233,6 +1236,7 @@ footer {
 .submenu {
   padding-left: 1.25rem; /* Adjusted indent for better visibility */
   margin-top: 0.25rem; /* Space above submenu items */
+  border-left: 2px solid #D2AE39;
 }
 
 .text-gray-300 {

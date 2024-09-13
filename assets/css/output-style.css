@@ -925,6 +925,7 @@ header {
   margin: 0;
   text-decoration: none;
   cursor: pointer;
+  font-size: 17.2px;
 }
 
 
@@ -1325,10 +1326,6 @@ footer {
     width: 350px; 
     height: 851px;
   }
-
-  .mobile-menu.active {
-    right: 26px;
-  }
   
 }
 
@@ -1428,9 +1425,6 @@ footer {
     right: 4.2rem;
   }
 
-  .mobile-menu.active {
-    right: 0px;
-  }
 }
 
 @media (min-width:700px) {
@@ -1466,10 +1460,14 @@ footer {
   .mobile-menu {
     display: none;
 }
+.hamburger-wrapper {
+  display: none;
+}
   .normal-nav {
     display: flex; 
   }
 }
+
 
 @media (min-width:850px) {
 
@@ -1479,6 +1477,11 @@ footer {
 
 }
 
+@media (min-width:900px) {
+.nav-item {
+  font-size: 19.6px;
+}
+}
 
 @media (min-width:1024px) {
   .header-margin{

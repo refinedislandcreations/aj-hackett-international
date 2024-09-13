@@ -46,39 +46,63 @@ header {
   z-index: 50;
 }
 
+
+/* General Styles for Navigation Items */
 .nav-item {
-  padding: 5px 10px;
-  margin: 0;
-  text-decoration: none;
-  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
   font-size: 17.2px;
 }
 
-
-
 /* Dropdown Styles */
-.group:hover .group-hover\:block {
-  display: block;
+.group {
+  position: relative;
 }
 
 .group:hover .group-hover\:block {
   display: block;
   position: absolute;
+  top: 100%; /* Position the dropdown directly below the nav item */
+  left: 0;
   min-width: 200px;
-  background-color: white;
-  z-index: 10;
+  background-color: white; /* Ensure dropdown has a solid background */
+  z-index: 1000;
+  border-radius: 4px;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for dropdown appearance */
+  opacity: 1;
 }
 
+/* Hide Dropdown Initially */
+.group .group-hover\:block {
+  display: none;
+}
+
+/* Hover Effects for Dropdown Items */
+.group .group-hover\:block a {
+  padding: 8px 12px; /* Ensure enough padding for clickable areas */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.group .group-hover\:block a:hover {
+  background-color: #e2e2e2; /* Slightly darker shade on hover */
+  border-radius: 4px;
+}
+
+/* Arrow Styles */
+.nav-item span {
+  font-size: 0.75rem; /* Adjust arrow size */
+  transition: transform 0.3s;
+}
+
+.group:hover .nav-item span {
+  transform: rotate(180deg); /* Rotate arrow on hover */
+}
+
+/* Nav Item Hover Effects */
 .nav-item:hover {
   background-color: #f3f3f3;
   border-radius: 4px;
 }
-
-
-.normal-nav {
-  display: none;
-}
-
 
 
 

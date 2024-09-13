@@ -34,25 +34,25 @@ header:
    title: AJ Hackett International
    text: "Every day, do something that reminds you that you’re still alive."
 site:
- - location: Cairns
+ - location: Cairns, Australia
    url: skypark-aj-hackett.html#cairns
    url-alt: "Explore the Skypark Cairns section"
    image: /images/cairns-australian-skypark-by-aj-hackett-international-index.png
    image-position: 50% 70%
    image-alt: Crew member assisting a jumper at Skypark Cairns tower.
- - location: Macau
+ - location: Macau SAR, China
    url: skypark-aj-hackett.html#macau
    url-alt: "Explore the Skypark Macau section"
    image: /images/macau-skypark-by-aj-hackett-international-index.png
    image-position: 50% 50%
    image-alt: Person mid-bungy jump from the Skypark tower in Macau.
- - location: Sentosa
+ - location: Sentosa, Singapore
    url: skypark-aj-hackett.html#sentosa
    url-alt: "Explore the Skypark Sentosa section"
    image: /images/skypark-sentosa-singapore-aj-hackett-international-index.png
    image-position:
    image-alt:
- - location: Normandie 
+ - location: Normandie, France 
    url: skypark-aj-hackett.html#normandie
    url-alt: "Explore the Skypark Normandie section"
    image: /images/skypark-normandie-france-aj-hackett-international-index.png
@@ -93,21 +93,24 @@ pondok:
 
     <p class="pb-10p sm:pb-5p">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
 
-    <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-5p">
+    <div>
       {% for item in page.site %}
-        <div class="bg-grey p-5 rounded-3xl shadow-md flex flex-col mb-10p sm:mb-0">
-          <div class="relative w-full h-48">
-            <a href="{{ item.url }}" aria-label="{{ item.url-alt }}">
-              <img loading="lazy" class="w-full h-full object-cover rounded-lg" src="{{ item.image }}" style="object-position: {{ item.image-position }};" alt="{{ item.image-alt }}" />
-            </a>
-          </div>
-          <h3 class="title-font text-3xl py-3">{{ item.location }}</h3>
-          <div class="mt-4">
-            <a href="{{ item.url }}" class="button">Find out more</a>
+        <div class="flex flex-col mb-10p sm:mb-0">
+          <!-- Background Image -->
+          <div class="relative w-full min-h-50 rounded-lg overflow-hidden mb-5p shadow-md" 
+               style="background-image: url('{{ item.image }}'); background-size: cover; background-position: {{ item.image-position }};">
+            
+            <!-- Transparent Blue Overlay with Location and Button -->
+            <div class="absolute bottom-0 left-0 w-full p-4 bg-[#03335799] mb-2p flex items-center justify-between text-white">
+              <h3 class="title-font text-lg text-light sm:text-xl">{{ item.location }}</h3>
+              <a href="{{ item.url }}" class="custom-button py-2 px-4 rounded-md ml-4">Find out more</a>
+            </div>
           </div>
         </div>
       {% endfor %}
     </div>
+    
+    
   </div>
 </section>
 

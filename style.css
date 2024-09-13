@@ -51,6 +51,7 @@ header {
   margin: 0;
   text-decoration: none;
   cursor: pointer;
+  font-size: 17.2px;
 }
 
 
@@ -121,6 +122,10 @@ header {
   color: #033357;
 }
 
+.text-light {
+  color: #F3F1EF;
+}
+
 .text-dark-blue:hover {
   color: #033357;
   text-decoration: underline;
@@ -148,6 +153,26 @@ header {
   background-color: inherit;
   color:#033357;
 }
+
+
+/* Styling for the custom button */
+.custom-button {
+  background-color: #FFFDFF;
+  color: #033357; 
+  transition: transform 0.4s ease, font-size 0.4s ease; /* Smooth transition for hover effects */
+}
+
+.custom-button:hover {
+  transform: scale(1.02); /* Slightly increase the size on hover */
+  font-size: 1.1em; /* Increase text size slightly */
+  color: #033357; 
+}
+
+.custom-button:focus {
+  outline: none; 
+}
+
+
 
 .grow { 
   transition: transform .2s ease-in-out; 
@@ -431,10 +456,6 @@ footer {
     width: 350px; 
     height: 851px;
   }
-
-  .mobile-menu.active {
-    right: 26px;
-  }
   
 }
 
@@ -534,9 +555,6 @@ footer {
     right: 4.2rem;
   }
 
-  .mobile-menu.active {
-    right: 0px;
-  }
 }
 
 @media (min-width:700px) {
@@ -572,10 +590,14 @@ footer {
   .mobile-menu {
     display: none;
 }
+.hamburger-wrapper {
+  display: none;
+}
   .normal-nav {
     display: flex; 
   }
 }
+
 
 @media (min-width:850px) {
 
@@ -585,6 +607,11 @@ footer {
 
 }
 
+@media (min-width:900px) {
+.nav-item {
+  font-size: 19.6px;
+}
+}
 
 @media (min-width:1024px) {
   .header-margin{

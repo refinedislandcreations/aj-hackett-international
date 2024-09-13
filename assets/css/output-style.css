@@ -450,6 +450,9 @@ a {
 .inset-0 {
   inset: 0px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .left-0 {
   left: 0px;
 }
@@ -525,6 +528,9 @@ a {
 .mb-5p {
   margin-bottom: 5%;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -560,9 +566,6 @@ a {
 }
 .aspect-square {
   aspect-ratio: 1/1;
-}
-.h-48 {
-  height: 12rem;
 }
 .h-80 {
   height: 20rem;
@@ -693,6 +696,9 @@ a {
 .border-r {
   border-right-width: 1px;
 }
+.bg-\[\#03335799\] {
+  background-color: #03335799;
+}
 .bg-cover {
   background-size: cover;
 }
@@ -710,6 +716,9 @@ a {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+.p-4 {
+  padding: 1rem;
 }
 .p-5 {
   padding: 1.25rem;
@@ -750,10 +759,6 @@ a {
 .py-2p {
   padding-top: 2%;
   padding-bottom: 2%;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 .py-5p {
   padding-top: 5%;
@@ -986,6 +991,10 @@ header {
   color: #033357;
 }
 
+.text-light {
+  color: #F3F1EF;
+}
+
 .text-dark-blue:hover {
   color: #033357;
   text-decoration: underline;
@@ -1013,6 +1022,26 @@ header {
   background-color: inherit;
   color:#033357;
 }
+
+
+/* Styling for the custom button */
+.custom-button {
+  background-color: #FFFDFF;
+  color: #033357; 
+  transition: transform 0.4s ease, font-size 0.4s ease; /* Smooth transition for hover effects */
+}
+
+.custom-button:hover {
+  transform: scale(1.02); /* Slightly increase the size on hover */
+  font-size: 1.1em; /* Increase text size slightly */
+  color: #033357; 
+}
+
+.custom-button:focus {
+  outline: none; 
+}
+
+
 
 .grow { 
   transition: transform .2s ease-in-out; 
@@ -1617,9 +1646,6 @@ footer {
   }
   .sm\:w-48 {
     width: 12rem;
-  }
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

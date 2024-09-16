@@ -68,7 +68,7 @@ header {
   top: 100%; /* Position the dropdown directly below the nav item */
   left: 0;
   min-width: 200px;
-  background-color: white; /* Ensure dropdown has a solid background */
+  background-color: white; 
   z-index: 1000;
   border-radius: 4px;
   transition: opacity 0.3s ease-in-out; /* Smooth transition for dropdown appearance */

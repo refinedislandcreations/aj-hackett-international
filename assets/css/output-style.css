@@ -510,9 +510,6 @@ a {
 .mb-10p {
   margin-bottom: 10%;
 }
-.mb-15p {
-  margin-bottom: 15%;
-}
 .mb-1p {
   margin-bottom: 1%;
 }
@@ -1796,9 +1793,6 @@ footer {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
     margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-  .lg\:pb-10p {
-    padding-bottom: 10%;
   }
   .lg\:pt-0 {
     padding-top: 0px;

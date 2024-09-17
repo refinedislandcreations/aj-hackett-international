@@ -1,6 +1,6 @@
 <footer class="max-w-screen-2xl mx-auto">
     <div class="bg-dark-blue pt-15p sm:pt-5p sm:px-5p">
-        <div class="sm:grid sm:grid-cols-4 gap-6 pl-10p sm:pl-0">
+        <div class="sm:grid sm:grid-cols-4 gap-16 pl-10p sm:pl-0">
             <!-- Column for the Logo -->
             <div class="footer-logo mb-4 md:mb-0 flex flex-col items-start"> <!-- Adjusted flex alignment -->
                 <a href="/index.html" aria-label="Go to homepage" class="mb-2">
@@ -50,8 +50,10 @@
 
         <!-- Centered Text for Copyright and Links -->
         <div class="mt-4 text-center text-gray-300 pt-2p pb-2p">
-            <p>&copy; 2024 AJ Hackett International. All rights reserved.</p>
-            <a href="https://refinedislandcreations.com/" class="pt-5p" target="_blank" rel="noopener noreferrer" aria-label="Link to Refined Island Creations website design and development">Designed and built by <span class="underline">Refined Island Creations</span>.</a>
+            <p>&copy; {{ "now" | date: "%Y" }} AJ Hackett International. All rights reserved.</p>
+            <a href="https://refinedislandcreations.com/" class="pt-2" target="_blank" rel="noopener noreferrer" aria-label="Link to Refined Island Creations website design and development">
+                Designed and built by <span class="underline font-semibold">Refined Island Creations</span>.
+            </a>
         </div>
     </div>
 </footer>

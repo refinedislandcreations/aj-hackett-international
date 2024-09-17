@@ -68,9 +68,9 @@ pondok:
 
 <section class="max-w-screen-2xl mx-auto">
   <div class="px-5p pt-5p pb-10p sm:pb-0">
-    <div class="text-center">
-        <p class="title-font text-2xl sm:text-4xl pb-2p px-5p"> A warm welcome from AJ Hackett International </p>
-        <p class="mb-2p px-5p"> Welcome to the World of Adventure with AJ Hackett! Dive into the story of the man who turned adrenaline into an empire. Discover more about AJ Hackett's journey and vision.
+    <div>
+        <p class="title-font text-2xl sm:text-4xl pb-2p"> A warm welcome from AJ Hackett International </p>
+        <p class="mb-2p"> Welcome to the World of Adventure with AJ Hackett! Dive into the story of the man who turned adrenaline into an empire. Discover more about AJ Hackett's journey and vision.
         </p>
         <div class="mb-5p mt-5p">
           <a href="/meet-aj-hackett.html" class="button" aria-label="Learn more about AJ Hackett and his adventure journey">Find out more</a>
@@ -93,11 +93,11 @@ pondok:
 
     <p class="pb-10p sm:pb-5p">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
 
-    <div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {% for item in page.site %}
         <div class="flex flex-col mb-10p sm:mb-0">
           <!-- Background Image -->
-          <div class="relative w-full min-h-50 rounded-lg overflow-hidden mb-5p shadow-md" 
+          <div class="relative w-full min-h-50 rounded-lg overflow-hidden shadow-md" 
                style="background-image: url('{{ item.image }}'); background-size: cover; background-position: {{ item.image-position }};">
             
             <!-- Transparent Blue Overlay with Location and Button -->
@@ -109,6 +109,7 @@ pondok:
         </div>
       {% endfor %}
     </div>
+    
     
     
   </div>

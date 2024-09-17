@@ -62,16 +62,17 @@ header {
   position: relative;
 }
 
+/* Dropdown Styles */
 .group:hover .group-hover\:block {
   display: block;
   position: absolute;
-  top: 100%; /* Position the dropdown directly below the nav item */
+  top: 100%;
   left: 0;
-  min-width: 200px;
-  background-color: white; 
+  min-width: 250px; /* Set a minimum width for the dropdown */
+  background-color: white;
   z-index: 1000;
   border-radius: 4px;
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for dropdown appearance */
+  transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
 
@@ -82,13 +83,22 @@ header {
 
 /* Hover Effects for Dropdown Items */
 .group .group-hover\:block a {
-  padding: 8px 12px; /* Ensure enough padding for clickable areas */
-  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+  padding: 0.5rem 1.5rem; /* Adjust the padding */
+  transition: background-color 0.3s ease-in-out;
+  white-space: normal; /* Allow text to break and fill the space */
+  display: flex; /* Use flexbox for better control over the content */
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically align items */
+  width: 100%; /* Ensure full width is used */
+  text-align: left; /* Align text to the left */
+  word-wrap: break-word; /* Allow long text to wrap */
 }
 
 .group .group-hover\:block a:hover {
   background-color: #e2e2e2; /* Slightly darker shade on hover */
   border-radius: 4px;
+  color: #333;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Arrow Styles */

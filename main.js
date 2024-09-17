@@ -12,12 +12,15 @@ $(document).ready(function() {
 
 
 
-// lightgallery
-
-lightGallery(document.getElementById('lightgallery'), {
-    speed: 500,
-    getCaptionFromTitleOrAlt: false,
-     download: false    
+// Initialize LightGallery for each gallery container
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[id^="gallery-"]').forEach(function(gallery) {
+      lightGallery(gallery, {
+          speed: 500,
+          getCaptionFromTitleOrAlt: false,
+          download: false
+      });
+  });
 });
 
 

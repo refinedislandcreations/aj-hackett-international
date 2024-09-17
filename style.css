@@ -317,11 +317,7 @@ header {
 }
 
 
-.footer-contact {
-  display: inline-block;
-  border-bottom: 2px solid #D2AE39;
-  width: auto;
-}
+
 
 .submenu a {
   font-size: 1.1rem; /* Slightly smaller for subpages */
@@ -364,6 +360,13 @@ footer {
 
 .footer-link:hover {
   color: #D2AE39; /* Gold hover effect */
+}
+
+.footer-contact {
+  display: inline-block;
+  border-bottom: 2px solid #D2AE39;
+  padding-bottom: 0;
+  width: auto;
 }
 
 .submenu {

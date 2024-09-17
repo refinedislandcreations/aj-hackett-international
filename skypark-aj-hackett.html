@@ -172,7 +172,7 @@ site:
 <section class="max-w-screen-2xl mx-auto">
   <div class="px-5p pb-5p">
     {% for item in page.site %}
-      <div id="{{ item.id }}" class="pt-5p">
+      <div id="section-{{ item.id }}" class="pt-5p">
         <h3 class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p">{{ item.location }}</h3>
         <hr class="pb-1p">
 
@@ -182,11 +182,11 @@ site:
         </div>
 
         <!-- Gallery Images -->
-        <div class="grid grid-cols-5 gap-1 w-full overflow-x-auto" id="lightgallery">
+        <div class="grid grid-cols-5 gap-1 w-full overflow-x-auto" id="gallery-{{ item.id }}" data-lightgallery="item">
             {% for image in item.gallery-images %}
                <a class="col-span-1" href="{{ image.img-url }}" aria-label="View larger version of the image">
                   <div class="aspect-square relative">
-                        <img loading="lazy" class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" style="object-position: {{ image.img-position }};"" alt="{{ image.img-alt }}">
+                        <img loading="lazy" class="w-full h-full object-cover object-center rounded-xl sm:rounded-3xl" src="{{ image.img-url }}" style="object-position: {{ image.img-position }};" alt="{{ image.img-alt }}">
                   </div>
                </a>
             {% endfor %}

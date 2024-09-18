@@ -153,7 +153,7 @@ experience:
 <!-----BG and Text-------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="relative mt-5p">
+  <div class="relative mt-5p lg:mt-2p">
     <div class="bg-cover bg-no-repeat"
         style="background-image: url('{{ page.quote-image }}'); height: 24rem; background-position: {{ page.quote-position }};">
       <div class="absolute inset-0 flex items-center justify-center p-5p">
@@ -172,10 +172,10 @@ experience:
 <!-----Experiences-------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p pb-5p">
+  <div class="px-5p pb-5p lg:pb-2p">
     {% for item in page.experience %}
-    <div class="pt-10p sm:pt-5p" id="{{ item.id }}">
-        <h3 class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p">{{ item.name }}</h3>
+    <div class="pt-10p sm:pt-5p lg:pt-2p" id="{{ item.id }}">
+        <h3 class="title-font text-2xl sm:text-4xl pb-2p xl:pb-1p">{{ item.name }}</h3>
         <hr class="pb-2p sm:pb-1p">
 
         <!-- Large Featured Image -->
@@ -197,7 +197,7 @@ experience:
         {% endif %}
 
         <!-- Description -->
-        <p class="pt-2p">{{ item.description }}</p>
+        <p class="pt-2p xl:pt-1p">{{ item.description }}</p>
 
         <!-- Location Links 
         <h4 class="uppercase text-2xl py-5p sm:py-2p">

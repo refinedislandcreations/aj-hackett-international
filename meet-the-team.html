@@ -62,13 +62,13 @@ people:
 ---
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p pt-5p">
-    <div class="pb-5p">
+  <div class="px-5p pt-2p">
+    <div class="pb-2p">
         <p class="editable"> At AJ Hackett International, our success is built on the expertise, passion, and dedication of our remarkable team. From pioneering adventure tourism to leading innovative projects, each member of our team brings unique skills and experiences that drive our mission forward. Meet the visionaries and leaders who make our extraordinary adventures possible. From AJ Hackett, the trailblazing founder of bungy jumping, to our dynamic leaders and specialists who ensure every Skypark and experience is exceptional, our team is at the heart of everything we do. Discover more about the individuals who are shaping the future of adventure tourism and making a difference around the globe. </p>
     </div>
     <div>
         {% for person in page.people %}
-        <div class="sm:grid sm:grid-cols-5 gap-5 mb-5p">
+        <div class="sm:grid sm:grid-cols-5 gap-5 mb-5p xl:mb-2p">
           <div class="col-span-2">
             <div class="relative h-full min-h-40 sm:min-h-50">
               <img loading="lazy" class="absolute inset-0 w-full h-full object-cover rounded-3xl"
@@ -77,8 +77,8 @@ people:
                    alt="{{ person['image-alt'] }}" />
             </div>
           </div>
-          <div class="col-span-3 sm:pl-5p">
-            <p class="title-font text-2xl sm:text-4xl pb-2p pt-5p"> {{ person.name }} </p>
+          <div class="col-span-3 sm:pl-5p md:pl-0">
+            <p class="title-font text-2xl sm:text-4xl pb-2p pt-5p md:pt-0"> {{ person.name }} </p>
             <p class="pb-5p"> {{ person.about }} </p>
           </div>
         </div>

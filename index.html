@@ -69,10 +69,10 @@ pondok:
 <section class="max-w-screen-2xl mx-auto">
   <div class="px-5p pt-5p sm:pt-2p pb-5p sm:pb-0">
     <div>
-        <p class="title-font text-2xl sm:text-4xl pb-2p editable"> A warm welcome from AJ Hackett International </p>
+        <p class="title-font text-2xl sm:text-4xl pb-2p 2xl:pb-1p editable"> A warm welcome from AJ Hackett International </p>
         <p class="mb-2p sm:mb-0 editable"> Welcome to the World of Adventure with AJ Hackett! Dive into the story of the man who turned adrenaline into an empire. Discover more about AJ Hackett's journey and vision.
         </p>
-        <div class="mb-10p sm:mb-5p mt-5p sm:mt-2p">
+        <div class="mb-10p sm:mb-5p 2xl:mb-2p mt-5p sm:mt-2p">
           <a href="/meet-aj-hackett.html" class="button" aria-label="Learn more about AJ Hackett and his adventure journey">Find out more</a>
         </div>
     </div>
@@ -86,16 +86,16 @@ pondok:
 
 <!------Skypark-------->
 <section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p pt-2p">
-    <div class="pb-2p">
+  <div class="px-5p pt-5p lg:pt-2p">
+    <div class="pb-2p 2xl:pb-1p">
       <p class="title-font text-2xl sm:text-4xl editable">Skypark by AJ Hackett</p>
     </div>
 
-    <p class="pb-10p sm:pb-2p editable">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
+    <p class="pb-2p 2xl:pb-1p editable">Dive into a world of unparalleled adventure at Skypark by AJ Hackett, where thrilling experiences and cutting-edge innovation come together. Our global network of Skyparks offers an array of heart-pounding activities set against breathtaking backdrops. From iconic bungy jumps and exhilarating giant swings to soaring ziplines and sky-high adventures like the Skybridge and Skycube, every moment is designed to push your limits and create unforgettable memories. Explore our diverse range of sky-high attractions and find your perfect adventure around the world!</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5">
       {% for item in page.site %}
-        <div class="flex flex-col mb-10p md:mb-0">
+        <div class="flex flex-col mb-2p md:mb-0">
           <!-- Background Image -->
           <div class="relative w-full min-h-40 md:min-h-50 rounded-lg overflow-hidden shadow-md" 
                style="background-image: url('{{ item.image }}'); background-size: cover; background-position: {{ item.image-position }};">
@@ -124,12 +124,12 @@ pondok:
 <!-----Pondok Santi-------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p pt-2p pb-2p">
+  <div class="px-5p pt-2p md:pt-5p pb-2p">
     <div class="pb-2p">
       <p class="title-font text-2xl sm:text-4xl">Pondok Santi Estate, Gili Trawangan</p>
     </div>
 
-    <div class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-5 mb-5p">
+    <div class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-5 mb-5p lg:mb-2p">
       <!-- Image 1 -->
       {% for item in page.pondok %}
       <div class="relative h-full min-h-30 sm:min-h-50 order-1 sm:order-none">

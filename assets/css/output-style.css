@@ -1847,6 +1847,10 @@ footer {
 
 
 @media (min-width: 768px) {
+  .md\:my-5p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1874,8 +1878,23 @@ footer {
   .md\:justify-between {
     justify-content: space-between;
   }
-  .md\:gap-8 {
-    gap: 2rem;
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+  .md\:pt-2p {
+    padding-top: 2%;
+  }
+  .md\:pt-5p {
+    padding-top: 5%;
   }
   .md\:text-5xl {
     font-size: 3rem;
@@ -1889,9 +1908,11 @@ footer {
 
 
 @media (min-width: 1024px) {
-  .lg\:my-5p {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  .lg\:mb-2p {
+    margin-bottom: 2%;
+  }
+  .lg\:mt-2p {
+    margin-top: 2%;
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1904,11 +1925,28 @@ footer {
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
     margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
+  .lg\:py-1p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .lg\:py-2p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+  .lg\:pb-1p {
+    padding-bottom: 1%;
+  }
+  .lg\:pb-2p {
+    padding-bottom: 2%;
+  }
   .lg\:pt-0 {
     padding-top: 0px;
   }
-  .lg\:pt-5p {
-    padding-top: 5%;
+  .lg\:pt-2p {
+    padding-top: 2%;
   }
   .lg\:text-4xl {
     font-size: 2.25rem;
@@ -1922,21 +1960,52 @@ footer {
 
 
 @media (min-width: 1280px) {
+  .xl\:my-1p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .xl\:mb-2p {
+    margin-bottom: 2%;
+  }
+  .xl\:mt-2p {
+    margin-top: 2%;
+  }
   .xl\:justify-start {
     justify-content: flex-start;
   }
+  .xl\:pb-0 {
+    padding-bottom: 0px;
+  }
+  .xl\:pb-1p {
+    padding-bottom: 1%;
+  }
   .xl\:pb-2p {
     padding-bottom: 2%;
+  }
+  .xl\:pt-0 {
+    padding-top: 0px;
+  }
+  .xl\:pt-1p {
+    padding-top: 1%;
+  }
+  .xl\:pt-2p {
+    padding-top: 2%;
   }
 }
 
 
 @media (min-width: 1536px) {
+  .\32xl\:mb-2p {
+    margin-bottom: 2%;
+  }
   .\32xl\:mt-1p {
     margin-top: 1%;
   }
   .\32xl\:pb-1p {
     padding-bottom: 1%;
+  }
+  .\32xl\:pt-1p {
+    padding-top: 1%;
   }
 }
 

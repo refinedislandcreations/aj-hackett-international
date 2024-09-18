@@ -256,5 +256,9 @@ _inputs:
     type: image
     label: image
     cascade: true
+  crazy-jump-image-1:
+    type: image
+    label: image
+    cascade: true
 data_config: {}
 timezone: Etc/UTC

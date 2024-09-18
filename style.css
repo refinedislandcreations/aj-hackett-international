@@ -286,16 +286,18 @@ header {
   color: #FFFDFF; /* Light text color */
   padding-left: 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   top: 0;
   right: -500px; /* Initially hidden off-screen */
   width: 300px; /* Width of the menu */
-  height: 100vh;
+  max-height: 100vh; /* Allow the menu to grow but not exceed viewport height */
   text-align: left;
-  overflow-y: auto;
+  overflow-y: auto; /* Scroll if content exceeds max-height */
   z-index: 50;
   transition: right 0.7s ease-in-out; /* Slide effect */
   border-left: 4px solid #D2AE39; /* Yellow left border */
 }
+
 
 .mobile-menu.active {
   right: 0; 

@@ -264,5 +264,9 @@ _inputs:
     type: image
     label: crazy jump image 2
     cascade: true
+  hope-image-1:
+    type: image
+    label: hope image 1
+    cascade: true
 data_config: {}
 timezone: Etc/UTC

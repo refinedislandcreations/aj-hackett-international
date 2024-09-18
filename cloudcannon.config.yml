@@ -280,5 +280,9 @@ _inputs:
     type: image
     label: image 1
     cascade: true
+  image-2:
+    type: image
+    label: image 2
+    cascade: true
 data_config: {}
 timezone: Etc/UTC

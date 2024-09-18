@@ -276,5 +276,9 @@ _inputs:
     type: image
     label: pondok image
     cascade: true
+  image-1:
+    type: image
+    label: image 1
+    cascade: true
 data_config: {}
 timezone: Etc/UTC

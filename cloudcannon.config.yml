@@ -243,10 +243,14 @@ _inputs:
     cascade: true
   pdf:
     type: document
-    label: Reconciliation PDF
     options:
       empty_type: text
       paths: pdfs
+    label: Reconciliation PDF
+    cascade: true
+  img-url:
+    type: image
+    label: Image
     cascade: true
 data_config: {}
 timezone: Etc/UTC

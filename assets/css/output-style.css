@@ -622,6 +622,9 @@ a {
 .w-full {
   width: 100%;
 }
+.w-screen {
+  width: 100vw;
+}
 .min-w-\[180px\] {
   min-width: 180px;
 }
@@ -1362,14 +1365,23 @@ footer {
 }
 
 
+
 .header-box {
-  right: -5%; 
-  margin-top: 40%; 
+  position: relative;
+  width: calc(100vw - 10%); /* Full viewport width minus some indentation */
+  max-width: 1600px; /* Maximum width for larger screens */
+  padding-right: 5%; /* Padding to prevent content from touching the right edge */
+  padding-left: 5%; /* Padding to ensure indentation on the left */
+  box-sizing: border-box; /* Include padding in width calculation */
+  top: -8vh; /* Adjust position as needed */
+  margin-left: 3%; /* Adjust this value for more or less indentation from the left */
 }
 
-.header-margin{
-  margin-top: 30%;
+
+.header-margin {
+  margin-top: 30%; /* Margin on top for spacing */
 }
+
 
 .timeline-margin {
   margin-right: -20%;
@@ -1474,6 +1486,10 @@ footer {
     top: 54%;
     right: 15%;
   }
+
+  .header-box {
+    top: -12vh; /* Adjust position as needed */
+  }
   
 }
 
@@ -1481,6 +1497,10 @@ footer {
 @media (min-width:550px) {
 .header-image-height {
   height: 40rem;
+}
+
+.header-box {
+  top: -15vh;
 }
 }
 
@@ -1548,6 +1568,8 @@ footer {
 
 }
 
+
+
 @media (min-width:800px) {
 
   .header-margin{
@@ -1565,7 +1587,18 @@ footer {
 
 
 
-@media (min-width:840px) {
+
+
+
+@media (min-width:850px) {
+
+  .header-margin{
+    margin-top: 16%;
+  }
+
+}
+
+@media (min-width:878px) {
   .mobile-menu {
     display: none;
 }
@@ -1577,16 +1610,7 @@ footer {
   }
 }
 
-
-@media (min-width:850px) {
-
-  .header-margin{
-    margin-top: 16%;
-  }
-
-}
-
-@media (min-width:900px) {
+@media (min-width:945px) {
 .nav-item {
   font-size: 19.6px;
 }
@@ -1655,17 +1679,9 @@ footer {
   
 }
 
-@media (min-width:1280px) {
-.header-box {
-  margin-top: 35%;
-}
-}
 
-@media (min-width:1536px) {
-  .header-box {
-    margin-top: 30%;
-  }
-  }
+
+
 
 
 @media (min-width:1600px) {
@@ -1683,6 +1699,10 @@ footer {
 }
 
 
+
+
+
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1690,10 +1710,18 @@ footer {
 }
 
 
+
+
+
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+
+
+
 
 
 .focus\:ring-2:focus {
@@ -1703,14 +1731,26 @@ footer {
 }
 
 
+
+
+
+
 .focus\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
 }
 
 
+
+
+
+
 .group:hover .group-hover\:flex {
   display: flex;
 }
+
+
+
+
 
 
 @media (min-width: 640px) {
@@ -1846,6 +1886,10 @@ footer {
 }
 
 
+
+
+
+
 @media (min-width: 768px) {
   .md\:my-5p {
     margin-top: 5%;
@@ -1907,6 +1951,10 @@ footer {
 }
 
 
+
+
+
+
 @media (min-width: 1024px) {
   .lg\:mb-2p {
     margin-bottom: 2%;
@@ -1959,6 +2007,10 @@ footer {
 }
 
 
+
+
+
+
 @media (min-width: 1280px) {
   .xl\:my-1p {
     margin-top: 1%;
@@ -1992,6 +2044,10 @@ footer {
     padding-top: 2%;
   }
 }
+
+
+
+
 
 
 @media (min-width: 1536px) {

@@ -272,5 +272,9 @@ _inputs:
     type: image
     label: hope image 2
     cascade: true
+  pondok:
+    type: image
+    label: pondok image
+    cascade: true
 data_config: {}
 timezone: Etc/UTC

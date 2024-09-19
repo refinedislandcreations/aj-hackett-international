@@ -1445,7 +1445,6 @@ footer {
 
   .mobile-menu {
     width: 350px; 
-    height: 851px;
   }
   
 }
@@ -1652,6 +1651,16 @@ footer {
   }
 
 }
+
+
+@media (min-width:1280px) {
+  
+  .header-box {
+    top: 42vh;
+  }
+  }
+
+
 
 @media (min-width:1300px) {
   .header-margin{
